@@ -11,4 +11,4 @@ page = BeautifulSoup(r.text, "html.parser")
 #X = number of the html page
 # foldername = name of the site  
 with open("foldername/YPages/pageX.html", "w") as file:
-    file.write(str(page))
+file.write(str(page))
