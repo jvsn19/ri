@@ -1,0 +1,1426 @@
+
+<!DOCTYPE html>
+
+<html add-global-variables="" data-page-type="default_page" data-tealium="" lang="en" ng-app="gmgApp">
+<head>
+<meta content="sDUn9GFXvVm61-0ODBUk5OskAKJotVHUF_DSaHpo3Ro" name="google-site-verification"/>
+<meta charset="utf-8"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"73c001910b","applicationID":"28900866","transactionName":"NgNbYkMDChJRWkMNCw9JdGByTScOXk1SChAxB15Tcg0KFUJWWwgBE0lQWFUHHA==","queueTime":0,"applicationTime":25,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vw4GWVZTGwEIXVFSDwcB"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(20),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{h?h-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(21),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(h+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,S=y.hash,this[u]=b.now()}function o(){M--,y.hash!==S&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(10),x=t(11),E=t(8),P=t(6),O=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),N=j.get("tracer");t(15),b.features.spa=!0;var S,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(h,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),P.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),R.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+c),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+c),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(23)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t(23)(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,h,"dom-"),f.inPlace(HTMLHeadElement.prototype,h,"dom-"),f.inPlace(HTMLBodyElement.prototype,h,"dom-"),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(23),a=t("ee").get("promise"),c=i(a),s=t(20),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(23)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,P.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(23)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,P=document.createTextNode(E);new l(a).observe(P,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(19),l=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),c=t(21),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],21:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],22:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(20),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(20),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(22)},{}]},{},["loader",2,15,5,3,4]);</script>
+<title>Community | Green Man Gaming</title>
+<meta content="Community" name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="https://images.greenmangaming.com/static/favicon.ico" rel="icon" type="image/x-icon"/>
+<script type="text/javascript">
+    var Utag_PreLoad_Wait = 'False';
+
+    var GMGSettings =
+    {
+      signInUrl: '/sign-in/',
+      tealiumUrl: ' //tags.tiqcdn.com/utag/gmg/greenman/prod/utag.js',
+      apiBaseUrl: 'https://api.greenmangaming.com/api/v2',
+      backendApiUrl: 'https://www.greenmangaming.com/api',
+      flippyBaseUrl: 'http://flippy.prod.gmgfarm.net:8080',
+      googleAnalyticsTrackingId: 'UA-66606072-2',
+      showBackgroundCybersourceTags: true,
+      showImageCybersourceTags: false,
+      showObjectCybersourceTags: false,
+      cdn: 'https://images.greenmangaming.com/',
+      currentPageRequiresAuthentication: false,
+      uplayConnectBaseUrl: 'https://connect.ubi.com',
+      uplayConnectAppId: '7fd14620-fe65-4c43-80eb-882b92d40553'
+    };
+
+    var AvailableLanguages = 'en,de,es,pt';
+  </script>
+<script src="https://images.greenmangaming.com/static/scripts/mainHeader.82e99627.js"></script>
+<script async="" src=" //tags.tiqcdn.com/utag/gmg/greenman/prod/utag.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    var hasDeviceFingerprinting = false;
+  </script>
+<script type="text/javascript">
+    UserInfoHelper.getUserInfo(setUserAndTealiumTags);
+  </script>
+<link href="https://www.greenmangaming.com/community/" id="canonical-link" rel="canonical">
+<link href="https://images.greenmangaming.com/static/css/main.bf974397.css" rel="stylesheet"/>
+<link href="https://images.greenmangaming.com/static/css/video-js.min.css" rel="stylesheet"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-66606072-2', 'auto', { 'name': 'gmgTracker' });
+  ga('gmgTracker.send', 'pageview');
+  </script>
+<script>
+    document.addEventListener('bablicload', function () {
+      bablic.widget.hide();
+    });
+  </script>
+</link></head>
+<body class="large-currency" data-close-mini-cart-on-click="">
+<header data-gmg-cache="1522520999" id="GMG_header" ng-controller="HeaderController">
+<nav class="navbar main-navigation {{communityPadding()}}" role="navigation">
+<div class="container">
+<div class="row header-content">
+<div class="col-xs-6 col-sm-3 top-content header-logo-container">
+<a href="/">
+<img alt="Green Man Gaming" src="https://images.greenmangaming.com/7288999a67e041cc9eec2abfc021db57/df4915a13b144168bcfb0cc46685ad34.svg"/>
+</a>
+</div>
+<div class="col-xs-6 col-sm-4 col-sm-push-5 col-md-3 col-md-push-6 user-actions">
+<div class="table-cell-middle" ng-cloak="">
+<ul>
+<li class="table-cell-middle" ng-if="!user.username">
+<div class="sign-in-btn">
+<a ng-href="/sign-in/{{returnUrl}}">
+<span>Sign In</span>
+</a>
+</div>
+<div class="register-btn">
+<a ng-href="/register/{{returnUrl}}">
+<span>Register</span>
+</a>
+</div>
+<a class="hidden-lg" ng-href="/sign-in/{{returnUrl}}">
+<div class="profile-logged-out-icon"></div>
+</a>
+</li>
+<li class="table-cell-middle user-account" ng-if="user.username">
+<a class="visible-xs" href="/profile/">
+<img class="avatar" ng-src="{{user.avatarUrl || 'https://images.greenmangaming.com/50a747a44252487ea0afd94517c9dac1/afe781cabfd243d8982e3fcbb217e8e0.jpg'}}"/>
+</a>
+<div class="dropdown user-account-dropdown hidden-xs">
+<a href="/profile/">
+<span class="user-name notranslate">{{user.username}}</span>
+<img class="avatar" ng-src="{{user.avatarUrl || 'https://images.greenmangaming.com/50a747a44252487ea0afd94517c9dac1/afe781cabfd243d8982e3fcbb217e8e0.jpg'}}"/>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="/profile/">My Profile</a>
+</li>
+<li>
+<a ng-click="logout()">Logout</a>
+</li>
+</ul>
+</div>
+<a class="visible-xs" href="/profile/">
+<div class="profile-logged-in-icon"></div>
+</a>
+</li>
+<li class="table-cell-middle language" ng-show="currentLanguageCode">
+<div class="dropdown hidden-xs language-setting-dropdown" ng-class="{ 'logged-out': !user.username }">
+<div>
+<div class="globe-icon"></div>
+<span>{{currentLanguageCode | uppercase}}</span>
+</div>
+<ul aria-labelledby="language-setting" class="dropdown-menu hidden-xs">
+<li ng-click="changeLanguage('en')">
+<a>English</a>
+</li>
+<li ng-click="changeLanguage('de')">
+<a>Deutsch</a>
+</li>
+<li ng-click="changeLanguage('es')">
+<a>Español</a>
+</li>
+<li ng-click="changeLanguage('pt')">
+<a>Português</a>
+</li>
+</ul>
+</div>
+</li>
+<notifications href="/private-messaging/" ng-if="user.username &amp;&amp; user.showCommunity"></notifications>
+<li class="table-cell-middle cart">
+<div class="empty-cart" ng-if="!basket.totalBasketQuantity &amp;&amp; !basket.addingToBasket">
+<a class="visible-xs" href="/your-cart---order/">
+<div class="cart-empty-icon"></div>
+</a>
+<div class="dropdown hidden-xs empty-cart-dropdown">
+<a href="/your-cart---order/">
+<div aria-expanded="true" aria-haspopup="true" class="dropdown-toggle" id="empty-cart" type="button">
+<span class="cart-empty-icon"></span>
+</div>
+</a>
+<ul aria-labelledby="empty-cart" class="dropdown-menu hidden-xs on-js-cart-open">
+<li>
+<h4>Your Shopping Cart is empty.</h4>
+</li>
+<li>
+<h4><strong>0</strong>items</h4>
+</li>
+</ul>
+</div>
+</div>
+<div class="full-cart" ng-if="basket.totalBasketQuantity || basket.addingToBasket">
+<a class="visible-xs" href="/your-cart---order/">
+<div ng-class="{'cart-full-icon': basket.totalBasketQuantity, 'cart-empty-icon': !basket.totalBasketQuantity}">
+<span class="badge" ng-bind="basket.totalBasketQuantity" ng-if="basket.totalBasketQuantity"></span>
+</div>
+</a>
+<div class="dropdown hidden-xs full-cart-dropdown" ng-class="{'open-cart': basket.open}">
+<a href="/your-cart---order/">
+<div aria-expanded="true" aria-haspopup="true" class="dropdown-toggle" id="cart-content" type="button">
+<div ng-class="{'cart-full-icon': basket.totalBasketQuantity, 'cart-empty-icon': !basket.totalBasketQuantity}">
+<span class="badge" ng-bind="basket.totalBasketQuantity" ng-if="basket.totalBasketQuantity"></span>
+</div>
+</div>
+</a>
+<ul aria-labelledby="cart-content" class="dropdown-menu on-js-cart-open" ng-class="{'visible': basket.open}">
+<li class="top">
+</li>
+<li ng-class="{'loading': basket.addingToBasket}">
+<loading-bars ng-if="basket.addingToBasket"></loading-bars>
+<div class="cart-container">
+<ul class="cart-content">
+<li ng-if="item.quantity &gt; 0" ng-repeat="item in basket.items | reverse">
+<a ng-href="{{ item.product.pageUrl }}">
+<div class="col-xs-3 prod-image">
+<img ng-src="{{ item.product.image || DEFAULT_PROD_IMG }}"/>
+</div>
+<div class="col-xs-5 prod-name">
+<div class="table-cell-middle">
+<p class="css-ellipsis notranslate" ellipsis="" ng-bind="item.product.name"></p>
+</div>
+</div>
+<div class="col-xs-2 prod-quantity">
+<span>x</span>
+<span class="units" ng-bind="item.quantity"></span>
+</div>
+</a>
+<div class="col-xs-2 remove-container">
+<a ng-click="basket.removeItem(item.product.id)">
+<div class="btn trash"></div>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="btn-container btn">
+<div>
+<a class="btn btn-success cart-btn" href="/your-cart---order/">
+VIEW CART
+</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-sm-pull-4 col-md-6 col-md-pull-3 search-collapse-container">
+<div class="menu-collapse-icon">
+<button class="navbar-toggle collapsed" data-target="#navbar-collapse-mobile" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="table-cell-middle input-container"><div class="input-group input-search-inner">
+<span class="visible-xs"></span>
+<input autocomplete="off" class="form-control input-sm search-input input-search-header" data-debounce="" data-on-enter="quickSearch.onEnter()" maxlength="150" ng-call="quickSearch.execute" ng-click="$event.stopPropagation()" ng-focus="quickSearchResults.display=true" ng-keydown="checkKey($event)" ng-model="quickSearch.query" placeholder="PC, MAC AND CONSOLE GAMES" type="search"/>
+<ul class="search-results hidden-xs" ng-cloak="" ng-if="(quickSearch.results.length &gt; 0 || quickSearch.loading) &amp;&amp; quickSearchResults.display">
+<li class="row text-center" ng-show="quickSearch.loading">
+<div class="spinner">
+<div class="rect1"></div>
+<div class="rect2"></div>
+<div class="rect3"></div>
+<div class="rect4"></div>
+<div class="rect5"></div>
+</div>
+</li>
+<li ng-class="{ 'is-selected' : selectedIndex &gt; -1 &amp;&amp; quickSearch.results[selectedIndex] == item }" ng-cloak="" ng-hide="quickSearch.loading" ng-mouseover="hoverSearchItem($index)" ng-repeat="item in quickSearch.results">
+<a ng-click="$event.stopPropagation()" ng-href="{{ item.pageUrl }}">
+<h5 ng-bind-html="item.name | colorMatch:quickSearch.query"></h5>
+<p ng-bind="item.availablePlatforms.join(' | ')"></p>
+</a>
+</li>
+</ul>
+<span class="input-group-btn" ng-click="isTablet &amp;&amp; !searching || quickSearch.onEnter()">
+<button class="btn btn-success btn-sm search-button" type="button">
+<span class="glyphicon glyphicon-search search-icon"></span>
+</button>
+</span></div></div>
+<div class="collapse navbar-collapse" id="navbar-collapse-mobile">
+<ul avoid-dropdown-menu-close="" class="nav navbar-nav">
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/pc-games/" role="button">
+<span>PC</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/genres/">View All</a>
+</li>
+<li>
+<a href="/shooter-games/">Shooters</a>
+</li>
+<li>
+<a href="/rpg-games/">RPGs</a>
+</li>
+<li>
+<a href="/action/">Action</a>
+</li>
+<li>
+<a href="/discover/">Discover</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/hot-deals/" role="button">
+<span>Hot Deals</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/payday20/">Payday Deals</a>
+</li>
+<li>
+<a href="/hot-deals/">Deal of the Day </a>
+</li>
+<li>
+<a href="/hot-deals/">Weekly Deals</a>
+</li>
+<li>
+<a href="/march-madness/bethesda/">Bethesda Sale</a>
+</li>
+<li>
+<a href="/march-madness/square-enix/">Square Enix Sale</a>
+</li>
+<li>
+<a href="/march-madness/gmg-march-madness/">GMG Publishing Sale</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/coming-soon/" role="button">
+<span>Coming Soon</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/coming-soon/">View All</a>
+</li>
+<li>
+<a href="/best-games/top-10-upcoming-games-in-2018/">Top 10 Games Coming Soon</a>
+</li>
+<li>
+<a href="/pre-order-video-games035/">Pre-purchase</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/bestsellers/" role="button">
+<span>Bestsellers</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/bestsellers/">Best Sellers</a>
+</li>
+</ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/new-gmg/" role="button">
+<span>New</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/new-gmg/">New Releases</a>
+</li>
+<li>
+<a href="/recently-added/">Recently Added</a>
+</li>
+<li>
+<a href="/indie/">Indie</a>
+</li>
+<li>
+<a href="/early-access-titles/">Early Access</a>
+</li>
+</ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/vr-titles/" role="button">
+<span>VR</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="">View All</a>
+</li>
+</ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/consoles/" role="button">
+<span>Consoles</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/consoles/ps4/">PlayStation 4</a>
+</li>
+<li>
+<a href="/consoles/ps3/">PlayStation 3</a>
+</li>
+<li>
+<a href="/consoles/3ds/">Nintendo</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/community/" role="button">
+<span>Community</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/community/">Community</a>
+</li>
+<li>
+<a href="/forum/">Forum</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/blog">Blog</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/newsroom">Newsroom</a>
+</li>
+<li>
+<a href="/games-hub/">Hubs</a>
+</li>
+<li>
+<a href="/content-creator-affiliate-scheme/">Green Team</a>
+</li>
+</ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="/giftcards/" role="button">
+<span>Giftcards</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+<li>
+<a href="/giftcards/">Giftcards</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 hidden-xs">
+<ul class="nav navbar-nav megamenu" nav-pills="">
+<li class="dropdown ">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/150987'" href="/pc-games/" load-megamenu-content="" role="button">
+<span>PC</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown ">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/150988'" href="/hot-deals/" load-megamenu-content="" role="button">
+<span>Hot Deals</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown ">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/194484'" href="/coming-soon/" load-megamenu-content="" role="button">
+<span>Coming Soon</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown ">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/208046'" href="/bestsellers/" load-megamenu-content="" role="button">
+<span>Bestsellers</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/347559'" href="/new-gmg/" load-megamenu-content="" role="button">
+<span>New</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/277337'" href="/vr-titles/" load-megamenu-content="" role="button">
+<span>VR</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/215577'" href="/consoles/" load-megamenu-content="" role="button">
+<span>Consoles</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown ">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/335039'" href="/community/" load-megamenu-content="" role="button">
+<span>Community</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+<li class="dropdown visible-lg">
+<a aria-expanded="false" class="dropdown-link " heading="'/en/MenuTabPage/GetMenuTabView/353300'" href="/giftcards/" load-megamenu-content="" role="button">
+<span>Giftcards</span>
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu megamenu-content" role="menu"></ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<script>
+  if (window.location.href.lastIndexOf("isThirdPartyRedemption=true") !== -1) {
+    document.getElementById("GMG_header").style.display = 'none';
+    document.getElementById("GMG_footer").style.display = 'none';
+  }
+</script>
+<div class="container global-message-bar-controller" ng-cloak="" ng-controller="GlobalMessageBarController">
+<div class="row">
+<div class="col-xs-12">
+<message-bar errors="msgBar.errors" hide-close="msgBar.hideClose" is-error="msgBar.isError" message="msgBar.message" visible="msgBar.visible"></message-bar>
+</div>
+</div>
+</div>
+<div class="container main">
+<div class="row">
+<div><div>
+<div>
+<div>
+<div class="hero design">
+<div class="container">
+<div class="text"><img alt="" height="100%" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Community3.svg">
+</img></div>
+</div>
+</div>
+</div>
+<div class="design container" style="margin-top: 25px;">
+<div class="row">
+<div class="col-md-8">
+<div class="mainlinks">
+<h2>Welcome to the community</h2>
+<div class="row">
+<div class="col-sm-6"><a class="section" href="/forum/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg%402x.jpg');"> </span> <span class="text"> <span class="header2">Forum</span> <span class="para">Forum for gaming discussion and news.</span> <span class="CTA">Take me there</span> </span> </a></div>
+<div class="col-sm-6"><a class="section" href="https://www.greenmangaming.com/blog/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg-1%402x.jpg');"> </span> <span class="text"> <span class="header2">Blog</span> <span class="para">Opinions, giveaways, videos, rants, and more!</span> <span class="CTA">Check it out</span> </span> </a></div>
+<div class="col-sm-6"><a class="section" href="/games-hub/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg-2%402x.jpg');"> </span> <span class="text"> <span class="header2">Game Hubs</span> <span class="para">Overview and guides for upcoming titles and classic franchises.</span> <span class="CTA">Discover more</span> </span> </a></div>
+<div class="col-sm-6"><a class="section" href="https://www.greenmangaming.com/newsroom/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg-4%402x.jpg');"> </span> <span class="text"> <span class="header2">Newsroom</span> <span class="para">All the hottest gaming news, all the time.</span> <span class="CTA">Get the scoop</span> </span> </a></div>
+<div class="col-sm-6"><a class="section" href="/best-games/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg-3%402x.jpg');"> </span> <span class="text"> <span class="header2">Best Games</span> <span class="para">What we consider to be the best games of all time!</span> <span class="CTA">Show me the games</span> </span> </a></div>
+<div class="col-sm-6"><a class="section" href="/content-creator-affiliate-scheme/"> <span class="blockimg" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/blockbg/block-bg-5%402x.jpg');"> </span> <span class="text"> <span class="header2">Green Team</span> <span class="para">Our official partners - a network of thousands of creators and streamers.</span> <span class="CTA">Find out more</span> </span> </a></div>
+</div>
+<h3 style="text-align: center; margin-top: 20px;">Say hello! You can find us on these social networks</h3>
+<div class="socialbuttons">
+<ul>
+<li><a href="https://www.facebook.com/GreenManGaming/" target="_blank"> <img alt="Facebook" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Social-icons/FB%402x.png"> </img></a></li>
+<li><a href="https://twitter.com/GreenManGaming?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"> <img alt="Twitter" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Social-icons/twitter%402x.png"> </img></a></li>
+<li><a href="https://www.youtube.com/channel/UCbONsRevt2_YIN6sLigGIzQ" target="_blank"> <img alt="YouTube" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Social-icons/YT%402x.png"> </img></a></li>
+<li><a href="https://www.instagram.com/greenmangaming/" target="_blank"> <img alt="Instagram" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Social-icons/Instagram%402x.png"/> </a></li>
+<li><a href="https://www.twitch.tv/greenmangaming" target="_blank"> <img alt="Twitch" src="https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/Social-icons/Twitch%402x.png"/> </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-4 hidden-sm hidden-xs"><a class="twitter-follow-button" data-size="large" href="https://twitter.com/GreenManGaming"> Follow @TwitterDev</a> <a class="twitter-timeline" data-height="815" data-theme="dark" href="https://twitter.com/GreenManGaming?ref_src=twsrc%5Etfw">Tweets by GreenManGaming</a>
+<script async="" charset="utf-8" src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+</div>
+</div>
+<div class="design container">
+<div id="featuredcontent">
+<h2>Top featured content</h2>
+<div class="row">
+<div class="col-md-12"><a class="featitem" href="/intel-feature/vermintide-2-hub/" style="background-image: url('https://s3.amazonaws.com/gmg-graphicscontent-uploader/intel-hub/vermintide2/hero.jpg'); background-position: 50% 30%;"> <span class="info"> <span class="platform hub">Intel Games Hub</span> <span class="headandcopy"> <span class="header3">Vermintide II hub</span> <span>Vermintide is back - darker, bloodier and more intense then ever. Get everything you need to know about Warhammer: Vermintide 2.</span> </span> <span class="CTA">Read more</span> </span> </a></div>
+<div class="col-md-6"><a class="featitem" href="https://www.greenmangaming.com/blog/top-10-games-with-left-wing-themes/" style="background-image: url('https://www.greenmangaming.com/blog/wp-content/uploads/2018/03/game-controllers.jpg');"> <span class="info"><span class="platform blog">Blog</span> <span class="headandcopy"> <span class="header3">TOP 10 GAMES WITH LEFT-WING THEMES</span> <span>To counterbalance The Guardian's opinion piece which talks solely about the far-right in videogames, here’s the top 10 Videogames with Left-Wing Themes.</span> </span> <span class="CTA">Read more</span> </span> </a></div>
+<div class="col-md-6"><a class="featitem" href="https://www.greenmangaming.com/newsroom/2018/03/16/square-enix-announces-shadow-of-the-tomb-raider/" style="background-image: url('https://www.greenmangaming.com/newsroom/wp-content/uploads/2018/03/shadow-of-the-tomb-raider-696x474.jpg'); background-position: 50% 100%;"> <span class="info"> <span class="platform newsroom">Newsroom</span> <span class="headandcopy"> <span class="header3">SQUARE ENIX ANNOUNCES SHADOW OF THE TOMB RAIDER</span> <span>Square Enix has revealed that the next Tomb Raider game, Shadow of the Tomb Raider, will be released on 14 September 2018.</span> </span> <span class="CTA">Read more</span> </span> </a></div>
+</div>
+</div>
+</div>
+<style><!--
+/*Button fix*/
+
+.section span {
+    display: block;
+}
+
+.design {
+    font-family: "Open Sans", Sans-serif;
+}
+
+.design h1,
+.design h2,
+.design h3,
+.design h4,
+.design p {
+    color: #ffffff;
+}
+
+.container.main {
+    width: 100%;
+}
+
+.text h1 {
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.design h3,
+.design h2,
+.header2,
+.header3 {
+    text-transform: uppercase;
+}
+
+.design p,
+.design .para {
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.text p:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+
+.hero .text {
+    background-color: rgb(0, 0, 0);
+    padding: 20px 20px;
+    display: inline-block;
+    height: 80px;
+}
+
+.hero {
+    height: 330px;
+    background-image: url(https://s3.amazonaws.com/gmg-graphicscontent-uploader/flat-page/community/hero.jpg);
+    background-size: 100% auto;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.mainlinks {
+    background-color: black;
+    padding: 16px;
+}
+
+.mainlinks .section hr {
+    margin: 5px 0px;
+    border: 0.5px solid #ffffff;
+    display: none;
+}
+
+.mainlinks .section {
+    height: 204px;
+    background-color: #292929;
+    position: relative;
+    display: flex;
+    margin: 10px 0px;
+    padding: 10px 30px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.mainlinks .blockimg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0.1;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+.section:hover .blockimg {
+    background-position: 0% 50%;
+    transition: 0.3s;
+    opacity: 0.3;
+}
+
+.mainlinks .section p {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+.section .text {
+    border-left: 4px solid #FDD600;
+    padding: 0 0 7px 7px;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.section:hover .text {
+    border-left: 10px solid #FDD600;
+    padding-right: -6px;
+    transition: 0.3s;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+
+/*BUTTON*/
+
+.section .CTA {
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    display: inline-block;
+    padding: 2px 10px;
+    margin-top: 5px;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.section:hover .CTA {
+    color: black;
+    background-color: white;
+    text-shadow: none;
+    transition: 0.3s;
+}
+
+.design h2,
+.design .header2 {
+    margin: 0 0 0 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.headandcopy span {
+    font-size: 17px;
+    font-weight: 100;
+    color: #bababa;
+}
+
+
+/*HEADER 3*/
+
+.design h3,
+.design .header3 {
+    margin: 0 0 5px 0;
+    font-size: 23px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.socialbuttons {
+    font-size: 0;
+}
+
+.socialbuttons ul li img {
+    height: 30px;
+}
+
+.socialbuttons li:hover {
+    background-color: #191919;
+}
+
+
+/*SHARE BUTTONS*/
+
+.socialbuttons li {
+    display: inline-block;
+    font-size: 12px;
+    width: 19.6%;
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+    margin: 0 0.2%;
+}
+
+.socialbuttons ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 -0.2%;
+}
+
+.mainlinks .section:hover .header {
+    bottom: 0;
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+/* ############ FEATURED CONTENT ############ */
+
+#featuredcontent {
+    background-color: #000000;
+    padding: 20px;
+    margin: 20px 0 0 0;
+}
+
+
+/*Article and image*/
+
+#featuredcontent .featitem {
+    display: block;
+    margin: 10px auto;
+    background-color: #000000;
+    background-size: cover;
+    background-position: 50% 50%;
+    padding: 5px;
+    padding-top: 140px;
+    transition: 0.4s;
+    position: relative;
+}
+
+
+/* Background image position for half blocks */
+
+#featuredcontent .col-md-6 .featitem {
+    background-position: 50% 90%;
+}
+
+
+/*Expand info 1/2*/
+
+#featuredcontent .featitem:hover {
+    padding-top: 5px;
+}
+
+
+/*Info box*/
+
+#featuredcontent .featitem .info {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: relative;
+}
+
+
+/* Span Fix */
+
+#featuredcontent span {
+    display: block;
+}
+
+
+/* Info box half size */
+
+#featuredcontent .col-md-12 .featitem .info {
+    width: 48.5%;
+}
+
+
+/* Text and header in info box */
+
+#featuredcontent .featitem .info .headandcopy {
+    height: 80px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+
+/* Paragraph info box */
+
+#featuredcontent .featitem .info .headandcopy p {
+    color: #a2a2a2;
+    font-weight: 100;
+}
+
+
+/* Hover size increase */
+
+#featuredcontent .featitem:hover .info .headandcopy {
+    height: 215px;
+    transition: 0.4s;
+}
+
+
+/* CTA info box */
+
+#featuredcontent .featitem .info .CTA {
+    display: inline-block;
+    background-color: #525252;
+    color: #ffffff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 0.5px;
+    transition: 0.4s;
+    vertical-align: middle;
+}
+
+.platform {
+    display: block !important;
+    padding: 5px 10px;
+    color: #adadad;
+    font-weight: 100;
+    font-size: 12px !important;
+    border: 1px solid #adadad;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.3s;
+    background-color: #000000;
+}
+
+.platform.hub {
+    color: rgba(70, 139, 227, 0.7);
+    border: 1px solid rgba(70, 139, 227, 0.7);
+}
+
+.featitem:hover .platform.hub {
+    color: rgb(70, 139, 227);
+    border: 1px solid rgba(70, 139, 227);
+}
+
+.platform.newsroom {
+    color: rgba(253, 214, 0, 0.75);
+    border: 1px solid rgba(253, 214, 0, 0.75);
+}
+
+
+.featitem:hover .platform.newsroom {
+    color: rgb(253, 214, 0);
+    border: 1px solid rgb(253, 214, 0);
+}
+
+
+.platform.blog {
+    color: rgba(255, 80, 3, 0.75);
+    border: 1px solid rgba(255, 80, 3, 0.75);
+}
+
+.featitem:hover .platform.blog {
+    color: rgb(255, 80, 3);
+    border: 1px solid rgb(255, 80, 3);
+}
+
+
+.featitem:hover .platform {
+    transition: 0.3s;
+}
+/* Hover state CTA info box */
+
+#featuredcontent .featitem:hover .info .CTA {
+    background-color: #00e205;
+    color: black;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 1199px) {
+    .hero {
+        height: 270px;
+        background-size: cover;
+        background-position: 50% 30%;
+        background-attachment: local;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #featuredcontent .col-md-12 .featitem .info {
+        width: 100%;
+    }
+    #featuredcontent .featitem:hover .info .headandcopy {
+        height: 80px;
+        overflow: hidden;
+    }
+    #featuredcontent .featitem:hover {
+        padding-top: 140px;
+    }
+    .hero {
+        height: 200px;
+    }
+    .mainlinks .section {
+        height: initial;
+        padding: 13px;
+    }
+}
+--></style></div></div></div>
+</div>
+</div>
+<div class="" id="GMG_footer">
+<footer>
+<section class="footer-top" ng-controller="FooterController">
+<div class="container">
+<div class="row">
+<div class="hidden-xs hidden-lg footer-form">
+<div class="row" ng-cloak="" ng-show="!subscribedSuccess">
+<div class="col-xs-4">
+<h4>Newsletter sign-up</h4>
+</div>
+<form class="newsletter-form" name="newsletter-form">
+<div class="col-xs-5">
+<div class="form-group">
+<input class="form-control" ng-class="{'newsletter-form-error': error}" ng-model="newsletterEmail.email" type="text">
+</input></div>
+</div>
+<div class="col-xs-3">
+<div class="form-group">
+<button class="btn btn-success btn-block" data-click-with-spinner="subscribe('https://www.greenmangaming.com/email-subscribe/')" ng-disabled="spinning" spinner-is-activated="spinning">
+Sign Up
+</button>
+</div>
+</div>
+</form>
+</div>
+<div class="hidden-xs hidden-lg signup-confirmation" ng-cloak="" ng-show="subscribedSuccess">
+<div class="col-xs-12">
+<div class="wrapper">
+<div><div> <img alt="Newsletter Signing Up" src="https://images.greenmangaming.com/cd272caba6194eab92c752b4c1deacec/984d293776b3430da61b9dd1d6e719a2.png"/>
+</div></div>
+<h4>Thanks for signing up!</h4>
+<p>
+Expect to get some awesome gaming deals delivered to your inbox very soon!
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-4">
+</div>
+<label class="newsletter-form-error padded-left" ng-show="invalidEmail">
+Boo, that isn't a valid email address!
+</label>
+<label class="newsletter-form-error padded-left" ng-show="error">
+Oops, something went wrong!
+</label>
+</div>
+</div>
+</div>
+<div class="row mid-row">
+<div class="co-xs-12 col-sm-4 col-lg-3 col-lg-push-3 accordion-tabs support-info" resize-accordion="">
+<div class="panel panel-heading">
+<h4 class="hidden-xs">Community</h4>
+<a class="visible-xs accordion-toggle" data-target="#customer-support" data-toggle="collapse" href="javascript:;">
+Community
+</a>
+<div class="panel-collapse collapse in" id="customer-support">
+<ul>
+<li>
+<a href="/forum/" title="Buzz">Buzz</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/blog" title="News blog">Blog</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/newsroom" title="Newsroom">Newsroom</a>
+</li>
+<li>
+<a href="/games-portal/" title="Games hub">Games hub</a>
+</li>
+<li>
+<a href="/best-games/" target="_blank" title="Best Games">Best Games</a>
+</li>
+<li>
+<a href="/content-creator-affiliate-scheme/" title="Green Team">Green Team</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3 col-lg-pull-3 hidden-xs">
+<h4>Awards</h4>
+<ul class="horizontal-list"><li> <a href="/link/406c1bd28cf74d459eec1ed3d2254697.aspx" target="_self" title="Large eCommerce Company of the Year Award Winner &amp; Best Pureplay eCommerce Award Winner">
+<img alt="Large eCommerce Company of the Year Award Winner &amp; Best Pureplay eCommerce Award Winner" src="https://images.greenmangaming.com/80910fd2e0fc4626beb6b6892bd64e3a/8612ee5bd740483cb8ebbcfaa2332ff4.png"/>
+</a>
+</li><li> <a href="/link/406c1bd28cf74d459eec1ed3d2254697.aspx" target="_self" title="London Stock Exchange - 1,000 companies to inspire Britain">
+<img alt="London Stock Exchange - 1,000 companies to inspire Britain" src="https://images.greenmangaming.com/93732dd37931435cb995ab763ca6e51a/d44b0f21689745399e801e5abfa10379.png"/>
+</a>
+</li><li> <a href="/link/406c1bd28cf74d459eec1ed3d2254697.aspx" target="_self" title="BAFTA nominee">
+<img alt="BAFTA nominee" src="https://images.greenmangaming.com/7add08d4f53b4544ba7aca3761a39ba6/bad24abcd5534ad89928fb83532f8bad.png"/>
+</a>
+</li><li> <a href="/link/406c1bd28cf74d459eec1ed3d2254697.aspx" target="_self" title="Click to view more awards">
+<img alt="Click to view more awards" src="https://images.greenmangaming.com/efee7ba2468446d2897b8a0c52a34715/64d84600b0dd4a14937df4c3ebb31fe9.png"/>
+</a>
+</li></ul>
+</div>
+<div class="col-xs-3 visible-lg footer-form" ng-cloak="" ng-show="!subscribedSuccess">
+<h4>Newsletter sign-up</h4>
+<form class="newsletter-form" name="newsletter-form">
+<div class="form-group">
+<label class="control-label" for="inputEmail" ng-show="!invalidEmail &amp;&amp; !error">
+Simply put in your email address below:
+</label>
+<label class="newsletter-form-error" ng-show="invalidEmail">
+Boo, that isn't a valid email address!
+</label>
+<label class="newsletter-form-error" ng-show="error">
+Oops, something went wrong!
+</label>
+<input class="form-control" ng-class="{'newsletter-form-error': error}" ng-model="newsletterEmail.email" type="text"/>
+</div>
+<div class="form-group">
+<button class="btn btn-success btn-block" data-click-with-spinner="subscribe('https://www.greenmangaming.com/email-subscribe/')" ng-disabled="spinning" spinner-is-activated="spinning">
+Sign Up
+</button>
+</div>
+</form>
+</div>
+<div class="col-xs-3 visible-lg signup-confirmation" ng-cloak="" ng-show="subscribedSuccess">
+<div class="wrapper">
+<div class="col-xs-4 nopadding">
+<div><div> <img alt="Newsletter Signing Up" src="https://images.greenmangaming.com/cd272caba6194eab92c752b4c1deacec/984d293776b3430da61b9dd1d6e719a2.png"/>
+</div></div>
+</div>
+<div class="col-xs-8 nopadding">
+<h4>Thanks for signing up!</h4>
+</div>
+<div class="col-xs-12 nopadding">
+<p>
+Expect to get some awesome gaming deals delivered to your inbox very soon!
+
+</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4 col-lg-3 hidden-xs">
+<h4>Business associations</h4>
+<ul class="horizontal-list"><li> <a href="http://futurefifty.com/" target="_self" title="Future Fifty">
+<img alt="Future Fifty" src="https://images.greenmangaming.com/13326e9dc7734c97abf94419a723693f/d5c31c84e3fa450fa8e49e925931eec0.jpg"/>
+</a>
+</li><li> <a href="http://ukie.org.uk/" target="_self" title="UKIE">
+<img alt="UKIE" src="https://images.greenmangaming.com/b696dee75e6d4db0978496c7222b7f5b/5d424d1e49e240fb8847478536f5e808.png"/>
+</a>
+</li></ul>
+</div>
+</div>
+<div class="row">
+<div class="co-xs-12 col-sm-4 col-lg-3 accordion-tabs" resize-accordion="">
+<div class="panel panel-heading">
+<h4 class="hidden-xs">About</h4>
+<a class="visible-xs accordion-toggle" data-target="#get-know" data-toggle="collapse" href="javascript:;">
+About
+</a>
+<div class="panel-collapse collapse in" id="get-know">
+<ul class="links-list">
+<li>
+<a href="/about-us/" title="About us">About us</a>
+</li>
+<li>
+<a href="/jobs/">Careers</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/blog/category/news/corporate-news/" title="Corporate news">Corporate news</a>
+</li>
+<li>
+<a href="/refund-policy/" title="Refund policy">Refund policy</a>
+</li>
+<li>
+<a href="/terms-and-conditions/" title="Terms &amp; conditions">Terms &amp; conditions</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/zendesk/index" target="_blank" title="Help &amp; support">Help &amp; support</a>
+</li>
+<li>
+<a href="/" title="+44 (0) 330 500 1515">+44 (0) 330 500 1515</a>
+</li>
+<li>
+<a href="/de/impressum/" title="Impressum">Impressum</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="co-xs-12 col-sm-4 col-lg-3 accordion-tabs" resize-accordion="">
+<div class="panel panel-heading">
+<h4 class="hidden-xs">Information</h4>
+<a class="visible-xs accordion-toggle" data-target="#find-more" data-toggle="collapse" href="javascript:;">
+Information
+</a>
+<div class="panel-collapse collapse in" id="find-more">
+<ul class="links-list">
+<li>
+<a href="/about-us/green-man-gaming-publishing/" title="Developers seeking publishing">Developers seeking publishing</a>
+</li>
+<li>
+<a href="/publishers-and-developers/" title="Publishers seeking retail partners">Publishers seeking retail partners</a>
+</li>
+<li>
+<a href="/content-creator-affiliate-scheme/" title="Streamer partner programme">Streamer partner programme</a>
+</li>
+<li>
+<a href="/affiliates/" title="Affiliate programme">Affiliate programme</a>
+</li>
+<li>
+<a href="https://www.greenmangaming.com/blog/green-man-gaming-change-log/" title="Change log">Change log</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="co-xs-12 col-sm-4 col-lg-3 accordion-tabs social-media" resize-accordion="">
+<div class="panel panel-heading">
+<h4 class="hidden-xs">Follow us</h4>
+<a class="visible-xs accordion-toggle" data-target="#follow" data-toggle="collapse" href="javascript:;">
+Follow us
+</a>
+<div class="panel-collapse collapse in" id="follow">
+<ul>
+<li class="blogger-icon">
+<a class="blogger-icon" href="https://www.greenmangaming.com/blog">
+</a>
+</li>
+<li>
+<a class="twitter-icon" href="http://twitter.com/greenmangaming">
+</a>
+</li>
+<li>
+<a class="facebook-icon" href="https://www.facebook.com/GreenManGaming">
+</a>
+</li>
+<li>
+<a class="youtube-icon" href="https://www.youtube.com/channel/UCbONsRevt2_YIN6sLigGIzQ">
+</a>
+</li>
+<li>
+<a class="twitch-icon" href="https://www.twitch.tv/greenmangaming">
+</a>
+</li>
+<li>
+<a class="gplus-icon" href="https://plus.google.com/117700879434967805412">
+</a>
+</li>
+<li>
+<a class="instagram-icon" href="https://www.instagram.com/greenmangaming/">
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="co-xs-12 accordion-tabs language-setting visible-xs" ng-cloak="" resize-accordion="">
+<div class="panel panel-heading">
+<a class="visible-xs accordion-toggle" data-target="#language" data-toggle="collapse">
+<div class="globe-icon"></div>
+<span ng-if="currentLanguageCode == 'en'">English</span>
+<span ng-if="currentLanguageCode == 'de'">Deutsch</span>
+<span ng-if="currentLanguageCode == 'es'">Español</span>
+<span ng-if="currentLanguageCode == 'pt'">Português</span>
+</a>
+<div class="panel-collapse collapse in" id="language">
+<ul>
+<li>
+<a ng-class="{'active': currentLanguageCode == 'en'}" ng-click="changeLanguage('en')">
+English
+</a>
+</li>
+<li>
+<a ng-class="{'active': currentLanguageCode == 'de'}" ng-click="changeLanguage('de')">
+Deutsch
+</a>
+</li>
+<li>
+<a ng-class="{'active': currentLanguageCode == 'es'}" ng-click="changeLanguage('es')">
+Español
+</a>
+</li>
+<li>
+<a ng-class="{'active': currentLanguageCode == 'pt'}" ng-click="changeLanguage('pt')">
+Português
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-3 visible-lg payment">
+<h4>Ways to pay</h4>
+<ul class="payment">
+<li class="paypal-icon">
+</li>
+<li class="visa-debit-icon">
+</li>
+<li class="visa-icon">
+</li>
+<li class="master-card-icon">
+</li>
+<li class="american-express-icon">
+</li>
+<li class="unionpay-icon">
+</li>
+<li class="sofort-icon">
+</li>
+<li class="paysafe-icon">
+</li>
+<li class="jcb-icon">
+</li>
+<li class="discover-icon">
+</li>
+</ul>
+</div>
+<div class="col-xs-12 visible-xs footer-form" ng-cloak="" ng-show="!subscribedSuccess">
+<h4>Newsletter sign-up</h4>
+<form class="newsletter-form" name="newsletter-form">
+<div class="form-group">
+<label class="control-label" for="inputEmail" ng-show="!invalidEmail &amp;&amp; !error">
+Simply put in your email address below:
+</label>
+<label class="newsletter-form-error" ng-show="invalidEmail">
+Boo, that isn't a valid email address!
+</label>
+<label class="newsletter-form-error" ng-show="error">
+Oops, something went wrong!
+</label>
+<input class="form-control" ng-class="{'newsletter-form-error': error}" ng-model="newsletterEmail.email" type="text"/>
+</div>
+<div class="form-group">
+<button class="btn btn-success btn-block" data-click-with-spinner="subscribe('https://www.greenmangaming.com/email-subscribe/')" ng-disabled="spinning" spinner-is-activated="spinning">
+Sign Up
+</button>
+</div>
+</form>
+</div>
+<div class="col-xs-12 visible-xs signup-confirmation" ng-cloak="" ng-show="subscribedSuccess">
+<div class="wrapper">
+<div class="col-xs-12 nopadding">
+<div class="info-int">
+<div><div> <img alt="Newsletter Signing Up" src="https://images.greenmangaming.com/cd272caba6194eab92c752b4c1deacec/984d293776b3430da61b9dd1d6e719a2.png"/>
+</div></div>
+<h4>Thanks for signing up!</h4>
+</div>
+<div class="col-xs-12 nopadding">
+<p>
+Expect to get some awesome gaming deals delivered to your inbox very soon!
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-lg-3 hidden-lg payment">
+<ul class="payment">
+<li class="paypal-icon">
+</li>
+<li class="visa-debit-icon">
+</li>
+<li class="visa-icon">
+</li>
+<li class="master-card-icon">
+</li>
+<li class="american-express-icon">
+</li>
+<li class="unionpay-icon">
+</li>
+<li class="sofort-icon">
+</li>
+<li class="paysafe-icon">
+</li>
+<li class="jcb-icon">
+</li>
+<li class="discover-icon">
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="footer-bottom">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 footer-info">
+<div class="info-int">
+<p>
+©2018 Green Man Gaming Limited. US Patent Pending. All rights Reserved.
+</p>
+<p>
+Trademarks are property of their respective owners.
+</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 logos-bottom">
+<div class="info-int">
+</div>
+</div>
+</div>
+</div>
+</section>
+</footer>
+</div>
+<script>
+  if (window.location.href.lastIndexOf("isThirdPartyRedemption=true") !== -1) {
+    document.getElementById("GMG_header").style.display = 'none';
+    document.getElementById("GMG_footer").style.display = 'none';
+  }
+</script>
+<div aria-labelledby="moreinfoModal" class="modal fade" id="moreinfo-modal" ng-controller="ErrorModalController" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<h1 class="modal-title" ng-bind="header"></h1>
+</div>
+<div class="modal-body">
+<div class="row moreinfo-content">
+<div class="col-xs-2 text-center moreinfo-icon">
+<img alt="Info" src="https://images.greenmangaming.com/static/img/css/icon-moreinfo.png"/>
+</div>
+<div class="col-xs-10">
+<p ng-bind="text"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-success btn-lg" data-dismiss="modal" type="button">
+OK
+</button>
+</div>
+</div>
+</div>
+</div>
+<div ng-controller="CancelPendingOrderModalController">
+<ng-include ng-if="loadCancelPendingOrderModal" onload="openModal()" src="'/en/Modals/CancelPendingOrderModal/330549'">
+</ng-include>
+</div>
+<div ng-controller="GreenGuardModalController">
+<ng-include ng-if="allowGreenGuard" onload="openModal()" src="url"></ng-include>
+</div>
+<script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Open+Sans:300,400,700,800:latin' ] },
+        custom: {
+          families: ['Green Man Gaming'],
+          urls: ['https://images.greenmangaming.com/static/css/fonts.3f68da8e.css']
+        }
+      };
+    </script>
+<script type="text/javascript">
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<div id="fb-root"></div>
+<script async="" defer="" src="https://apis.google.com/js/platform.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-animate.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-cookies.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-resource.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-sanitize.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.min.js"></script>
+<script src="https://images.greenmangaming.com/static/scripts/main.8ea474e1.js"></script>
+<script async="" onload="window.MuutServiceHelper.notify('Muutio loaded!!!!')" src="https://images.greenmangaming.com/static/scripts/muutio.min.js"></script>
+<script>
+    var bablic = window.bablic || {};
+    bablic.noSEO = true;
+  </script>
+</body>
+</html>
