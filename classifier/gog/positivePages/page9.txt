@@ -1,0 +1,507 @@
+
+
+        	Ghost of a Tale em GOG.com
+			
+            [ng-cloak], .ng-cloak, .ng-hide { display:none !important; }
+        
+
+
+
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec_bg_480.jpg ); }
+			@media (min-width:481px) {
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec_bg_800.jpg ); }
+			}
+			@media (min-width:801px) {
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec_bg_1366.jpg ); }
+			}
+			@media (min-width:1367px) {
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec_bg_1680.jpg ); }
+			}
+			@media (min-width:1681px) {
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec_bg_1920.jpg ); }
+			}
+			@media (min-width:1921px) {
+				.productcard-wrapper { background-image: url(//images-2.gog.com/499e81f037839ebb62c72459301e27e6b9a84856897dffc1ef91fbb7a9649bec.jpg ); }
+			}
+		[gog-mosaic-ending-soon-link]{display:none!important}.mosaic-header .module-header2__section--secondary .module-header2__element{display:none} .frontpage-promo .mosaic{overflow:hidden;position:relative;margin-bottom:15px}.product-takeover__logo,.product-takeover__text{margin-top:0}.product-takeover__text{margin-bottom:50px}.product-takeover__container{padding-top:80px;padding-bottom:52px}.module--addon [gog-product="1730570049"] .product-state__price{visibility:hidden}@media (max-width:800px){.product-takeover{min-height:0}}@media (min-width:564px){.product-takeover{min-height:500px}.frontpage-promo .promo-item__bundle-tall .promo-item__title{margin-top:40%}}.banner-back-to-sale__title{color: #fff}.tabbed-bundles__header .module-header2__section.module-header2__section--secondary{display:none;}.promo-item__banner-giveaway-product .promo-item__description, .promo-item__banner-giveaway-product .promo-item__title, .promo-item__banner-product .promo-item__description, .promo-item__banner-product .promo-item__title { color: #fff;text-shadow: 0px 1px 2px #000; }.menu-friend{box-sizing:content-box;}
+.st0{fill:none;stroke:#000;stroke-miterlimit:10}
+            ADICIONAR SUA RESENHA PARA Ghost of a TaleMinha avaliaçăo
+                {{ view.review.titleLimit - view.review.title.length }}
+            
+            {{ view.review.textLimit - view.review.text.length }}
+        Regras para ResenhasCoisas para considerar enquanto escreve sua resenha.ENVIE SUA RESENHAENVIE SUA RESENHA
+            TENHA ISSO EM MENTE AO ESCREVER SUA RESENHA:
+        
+                    Resenhe o jogo
+                
+                    Sua resenha deve se concentrar em sua experiência de jogo, apenas. Deixe o jogo se sustentar por seus próprios méritos.
+                
+                    Evite distrações
+                
+                    Para discutir assuntos como novidades, preço ou a comunidade, use nossos fóruns. Para pedir jogos novos e novos serviços para o site ou o GOG Galaxy, use a Lista de Desejos da Comunidade. Para obter suporte técnico para seu jogo, entre em contato com o nosso time de suporte.
+                
+                    Critique com responsabilidade
+                
+                    Para manter a nossa seção de Resenhas limpa e útil, iremos remover quaisquer resenhas que quebrem estas diretrizes, ou nossos Termos de Uso.
+                
+            Ok, entendi        
+                            Atalhos de teclado
+                         
+						 
+						ESC 
+						
+                                Abrir imagem originalLoja
+                    Comprado
+                
+                    Compre Já
+                
+                    Compre a Pré-venda
+                
+                Comprado
+            
+                Jogue Grátis
+            
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                         {{ customCategory.categoryTitle }}
+                Lançamentos
+                        Mais vendidos
+                        Promoções
+                        Ação
+                        Aventura
+                        Indie
+                        RPG
+                        Tiro
+                        Simulação
+                        Esportes & corrida
+                        Estratégia
+                        Filmes para jogadores
+                        Ver todos os jogos
+                        
+        Mais
+        GOG.comGOG GalaxyJunte-se a nósProblemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyForumsLista de desejos da comunidadeFacebookTwitterTwitch
+        Sobre
+        GOG.comGOG GalaxyJunte-se a nósComunidadeTodos os fórunsFóruns - discussão geralLista de desejos da comunidadeFacebookTwitterTwitch
+        Suporte
+        Problemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyFazer loginFazer login
+                Criar Conta
+            
+                Fazer login
+            
+                O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+            
+            Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+        
+                Por quê escolher o GOG.com?
+            Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.Sua contaJogos
+                0Filmes
+                0Lista de desejos
+                0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                Pedidos & configuraçõesIdioma & moeda
+
+                Idioma:
+                                English
+                            
+                                Deutsch
+                            
+                                Français
+                            
+                                Polski
+                            
+                                Português do Brasil
+                            
+                                Pусский
+                            
+                                中文(简体)
+                            Moeda:
+                            BRL
+                        
+                            USD
+                        Aplicar alteraçõesDeslogarSuas notificações
+                {{ notifications.notificationsCountLabel }} pendente
+            
+                There’s nothing to read yet
+            Limpar tudo
+
+                Fique conectado a tudo que está acontecendo
+            
+                Ver novas mensagens de bate-papo, respostas no fórum, convites de amigo, bem como anúncios importantes e ofertas relevantes para você
+            
+                                    GOG.com Fórum
+                                
+                                    GOG.com Lista de Desejos
+                                Convite de amizade recebidoConvite de jogo de Já disponível para compra Convite de amizade aceitoSeus amigos
+                on-line agora
+            
+                Friends list is currently empty
+            Gerenciar amigos
+
+                Conecte com seus amigos no GOG.com
+            
+                Fique conectado com seus amigos, comece a conversar e jogar facilmente com eles. Talvez convide novas pessoas para se juntar a seu círculo? :)     
+            
+                Convidar Amigos
+            OnlineOffline099+
+                Finalizar compra
+            Seu carrinhoSeu carrinho
+                    está vazio no momento.
+                  
+
+                Seu carrinho está vazio
+            
+                Explore grandes jogos e promoções
+            
+                Ver mais vendidos
+            
+                Sua lista de desejos
+            Grátis
+            Lista de desejos
+        Em sua Lista de desejosRemoverMover para lista de desejosEm sua Lista de desejosComprado%
+            
+            Remover
+            limpar
+                     Jogos
+                 Filmes
+                
+
+                    Nenhum resultado encontrado
+                
+                    Tente ajustar os termos de sua pesquisa. Você pode pesquisar por títulos, publicadores e desenvolvedores.
+                
+                    Ver todos os jogos
+                
+                    Ver filmes
+                
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                
+                    Comprado
+                
+                    Grátis
+                Em breveEM DES
+                        filme
+                    %
+                        VER  JOGOS
+                                VER  FILMES
+
+        Menu
+    LojaSobreComunidadeSuporte{{ customCategory.categoryTitle }}Jogos
+                            0Filmes
+                            0Lista de desejos
+                            0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                            Pedidos & configuraçõesIdioma & moedaDeslogarFazer login
+                    Criar Conta
+                
+                    Fazer login
+                
+                    O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+                
+                Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+            Por quê escolher o GOG.com?Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.......Ghost of a Tale230 votos
+				                                                                                                                                Windows
+			    English, {{ langToShow }} & mais
+    Galeria de mídia
+COMPRAR ITEMComprar item – compradoComprar item – pré-venda
+                    ADICIONADO AO CARRINHO
+                47.49
+                        Grátis                    {{ product.price.amount }}{{ product.price.baseAmount }}{{ product.price.amount }}
+                    
+                        Vocę economiza                        {{ product.price.discountDifference }}                        ({{ product.price.discountPercentage }}%)
+                    {{ product.price.baseAmount }}
+                        Grátis                    
+                    
+                        Vocę economiza                        {{ product.price.discountDifference }}ADICIONAR AO CARRINHO            
+                COMPRE JÁ            SEM DRM. Sem ativação ou conexão online para jogar.
+                GARANTIA DO DINHEIRO DE VOLTA. 30 dias de cobertura após a compra.
+                    CompartilharTweetCompartilhar
+    colocado na lista de desejos
+
+    colocar na lista de desejos
+
+    colocar na lista de desejos
+DescriçăoSobre: Ghost of a Tale is an action-RPG game in which you play as Tilo, a mouse and minstrel thrown in a perilous adventure. The game takes place in a medieval world populated only by animals and puts an emphasis on immersion and exploration. It features stealth elements, dialogs and quests.
+            Explore a medieval world as a minstrel mouseUse your intelligence, nimbleness and stealth to surviveA non-violent game where you're not required to kill anyoneRESENHAS DE USUÁRIOSAvaliação média:Aguardando mais avaliaçőes
+                    Seja o primeiro a avaliar
+                
+                    Minha resenha: criar agoraMinha avaliação:{{  review.description }}{{ review.source }}
+                Ainda năo existem resenhas.
+            
+                            {{ review.title }}
+                        
+                            
+                                                        por     
+    {{ ::review.author.name }}{{ ::review.author.name }}
+            Pedimos desculpas, dados do usuário estão atualmente indisponíveis. Tente novamente mais tarde.
+        Ver lista de desejosIniciar conversaConvidar amigosConvidar amigosAceitar conviteAceitar conviteConvite pendente...Usuário desde {{ user.formattedDateUserJoined }}
+			Amizade desde {{ user.formattedDateUserFriended }}
+			
+                Desbloquear bate-papo
+            Usuário bloqueado
+			A lista de desejos deste usuário não é pública.Você não pode conversar com este usuário devido às configurações de privacidade dele ou suas.Você não pode conversar com este usuário porque o bloqueou.Você não pode convidar este usuário porque o bloqueou.Leia mais
+                    
+	                {{ review.added | toMilis | date:reviewDateformat }}
+                    
+	                |
+                        Isso foi útil para vocę?
+                        SimNăo
+                        Agradecemos pelo seu voto!
+                    ({{review.helpfulVotes}} de {{review.totalVotes}} usuários consideraram isto útil)relatório
+                    de                    {{ totalPages }}
+									PEGI Avaliação: 12+
+							
+									ESRB Avaliação: Todos 10+
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							
+        
+        All the names, locations and characters featured in Ghost of a Tale are copyright SeithCG.
+    Detalhes do jogoGênero:Ação
+                         -                                                                                             RPG
+                         -                                                                                             FantasiaRoda em:
+                                                                                                                                                                                                                                                                                        Windows (7, 8, 10)
+                Idiomas:Somente texto: Deutsch, English, español, français, italiano, русскийLançado em:13 de março de 2018Tamanho:3 GBEmpresa:SeithCG
+            /
+            SeithCGAvaliação:
+									PEGI Avaliação: 12+
+							
+									ESRB Avaliação: Todos 10+
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							Características do jogoum jogadorsuporte de controleSaves na NuvemMáscaraRequisitos de sistema
+            Requisitos mínimos de sistema - Windows:
+        
+
+        7 / 8 / 10
+Processor: Intel i5 - 2.5Ghz
+Memory: 3 GB RAM
+Graphics: NVIDIA GeForce GTX 660 (2GB) or AMD Radeon R9 270
+DirectX: Version 11
+Storage: 5 GB available space
+Sound Card: Motherboard Integrated sound card
+Mouse, Keyboard
+Additional Notes: Although Ghost of a Tale is fully playable with mouse and keyboard, we'd strongly recommend playing with a gamepad for the best experience. 
+            Requisitos recomendados de sistema - Windows:
+        
+
+        7 / 8 / 10
+Processor: Intel i7 - 3.4Ghz
+Memory: 4GB
+NVIDIA GeForce GTX 760 (3GB) or AMD Radeon R9 290
+DirectX 11
+Disk space: 5GB
+Mouse, Keyboard
+
+A gamepad is highly recommended
+    
+		QUEM COMPROU ESTE JOGO TAMBÉM LEVOU    
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					16.990%The Witcher: Enhanced EditionThe Witcher: Enhanced EditionEm breveEM DES2007RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					36.990%Witcher 2: Assassins Of Kings, The - Enhanced EditionWitcher 2: Assassins Of Kings, The - Enhanced EditionEm breveEM DES2012RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					99.990%The Witcher 3: Wild Hunt - Game of the Year EditionThe Witcher 3: Wild Hunt - Game of the Year EditionEm breveEM DES2016RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					27.990%SpelunkySpelunkyEm breveEM DES2013Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					19.990%Beyond Good & Evil™Beyond Good & Evil™Em breveEM DES2003Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018MAIS RECOMENDAÇŐESCrie o seu
+                GOGMIXES: DESCUBRA MAIS JOGOS
+            votos
+                                                                por     
+    {{ ::mix.user.name }}{{ ::mix.user.name }}
+            Pedimos desculpas, dados do usuário estão atualmente indisponíveis. Tente novamente mais tarde.
+        Ver lista de desejosIniciar conversaConvidar amigosConvidar amigosAceitar conviteAceitar conviteConvite pendente...Usuário desde {{ user.formattedDateUserJoined }}
+			Amizade desde {{ user.formattedDateUserFriended }}
+			
+                Desbloquear bate-papo
+            Usuário bloqueado
+			A lista de desejos deste usuário não é pública.Você não pode conversar com este usuário devido às configurações de privacidade dele ou suas.Você não pode conversar com este usuário porque o bloqueou.Você não pode convidar este usuário porque o bloqueou.
+                    MAIS GOGMIXES                
+            Năo existem GOGmixes ainda com este item.
+        
+									PEGI Avaliação: 12+
+							
+									ESRB Avaliação: Todos 10+
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							
+        
+        All the names, locations and characters featured in Ghost of a Tale are copyright SeithCG.
+    
+                        Resgatar código
+                    
+                        Resgate seu jogo
+                    
+                        Fale conosco
+                    
+                        oportunidades de trabalho
+                    
+                        Enviar seu jogo
+                    Idioma:Moeda:JogosEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosFilmesEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosEnviar seu filmeSuportePerguntas Frequentes do SiteSuporte de jogosPolíticasFale conoscoMinha ContaMinha biblioteca
+                    Pedidos & Configurações
+                    ComunidadeFórunsLista de desejos da comunidade
+    Facebook
+ 
+    Twitter
+ 
+    Google Plus
+ 
+    Tumblr
+ 
+    Youtube
+ 
+    Twitch
+ 
+    Reddit
+ 
+    Rss
+ 
+                            Jurídico
+                         
+                                            
+                                Reorganização da companhia
+                             
+                        
+                            Política de Cookies				
+                        
+                            Nossos agradecimentos
+                          
+                
+                    GOG Sp. z o.o.
+                    2018.
+                    Parte do grupo de .
+                
+

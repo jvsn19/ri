@@ -1,0 +1,764 @@
+
+
+        GOG.com		
+            [ng-cloak], .ng-cloak, .ng-hide { display:none !important; }
+        
+
+
+        
+                    @media (min-width:850px) {
+                                                        #big-spot-blur--1 { background-image:url(//images-4.gog.com/85c3afeb6c4050415f46702faddd67ca8cc9489988d42a2787f2004aea71e0df_bg_1366.jpg);}
+                                                                            #big-spot-blur--2 { background-image:url(//images-3.gog.com/32e015e12e2c87926dfa72dafdb327d601c6deb0aba262e19e0d308e58225031_bg_1366.jpg);}
+                                                                            #big-spot-blur--3 { background-image:url(//images-1.gog.com/1901b1e890fac729fd2b9abb9e33fe77f89ccc70bc3a3d3dd5a1cb87c47df9e9_bg_1366.jpg);}
+                                                                            #big-spot-blur--4 { background-image:url(//images-2.gog.com/6490de7e68d2d0867f2c8ad9fdcb420f8a20d0a504ca0bd031a8b09f81063d12_bg_1366.jpg);}
+                                                                            #big-spot-blur--5 { background-image:url(//images-3.gog.com/3b8ada9abc62e13b3c08c9e4fd4c2be8fd9a2f1b4d7a65a0ef2b6e8bb7c915a2_bg_1366.jpg);}
+                                                                            #big-spot-blur--6 { background-image:url(//images-1.gog.com/16046fa233039162f13e551e343cb5672a19ea1c1251017224ce9facd8b22499_bg_1366.jpg);}
+                                                }
+                    @media (min-width:1367px) {
+                                                        #big-spot-blur--1 { background-image:url(//images-4.gog.com/85c3afeb6c4050415f46702faddd67ca8cc9489988d42a2787f2004aea71e0df_bg_1680.jpg);}
+                                                                            #big-spot-blur--2 { background-image:url(//images-3.gog.com/32e015e12e2c87926dfa72dafdb327d601c6deb0aba262e19e0d308e58225031_bg_1680.jpg);}
+                                                                            #big-spot-blur--3 { background-image:url(//images-1.gog.com/1901b1e890fac729fd2b9abb9e33fe77f89ccc70bc3a3d3dd5a1cb87c47df9e9_bg_1680.jpg);}
+                                                                            #big-spot-blur--4 { background-image:url(//images-2.gog.com/6490de7e68d2d0867f2c8ad9fdcb420f8a20d0a504ca0bd031a8b09f81063d12_bg_1680.jpg);}
+                                                                            #big-spot-blur--5 { background-image:url(//images-3.gog.com/3b8ada9abc62e13b3c08c9e4fd4c2be8fd9a2f1b4d7a65a0ef2b6e8bb7c915a2_bg_1680.jpg);}
+                                                                            #big-spot-blur--6 { background-image:url(//images-1.gog.com/16046fa233039162f13e551e343cb5672a19ea1c1251017224ce9facd8b22499_bg_1680.jpg);}
+                                                }
+                    @media (min-width:1681px) {
+                                                        #big-spot-blur--1 { background-image:url(//images-4.gog.com/85c3afeb6c4050415f46702faddd67ca8cc9489988d42a2787f2004aea71e0df_bg_1920.jpg);}
+                                                                            #big-spot-blur--2 { background-image:url(//images-3.gog.com/32e015e12e2c87926dfa72dafdb327d601c6deb0aba262e19e0d308e58225031_bg_1920.jpg);}
+                                                                            #big-spot-blur--3 { background-image:url(//images-1.gog.com/1901b1e890fac729fd2b9abb9e33fe77f89ccc70bc3a3d3dd5a1cb87c47df9e9_bg_1920.jpg);}
+                                                                            #big-spot-blur--4 { background-image:url(//images-2.gog.com/6490de7e68d2d0867f2c8ad9fdcb420f8a20d0a504ca0bd031a8b09f81063d12_bg_1920.jpg);}
+                                                                            #big-spot-blur--5 { background-image:url(//images-3.gog.com/3b8ada9abc62e13b3c08c9e4fd4c2be8fd9a2f1b4d7a65a0ef2b6e8bb7c915a2_bg_1920.jpg);}
+                                                                            #big-spot-blur--6 { background-image:url(//images-1.gog.com/16046fa233039162f13e551e343cb5672a19ea1c1251017224ce9facd8b22499_bg_1920.jpg);}
+                                                }
+                    @media (min-width:1921px) {
+                                                        #big-spot-blur--1 { background-image:url(//images-4.gog.com/85c3afeb6c4050415f46702faddd67ca8cc9489988d42a2787f2004aea71e0df.jpg);}
+                                                                            #big-spot-blur--2 { background-image:url(//images-3.gog.com/32e015e12e2c87926dfa72dafdb327d601c6deb0aba262e19e0d308e58225031.jpg);}
+                                                                            #big-spot-blur--3 { background-image:url(//images-1.gog.com/1901b1e890fac729fd2b9abb9e33fe77f89ccc70bc3a3d3dd5a1cb87c47df9e9.jpg);}
+                                                                            #big-spot-blur--4 { background-image:url(//images-2.gog.com/6490de7e68d2d0867f2c8ad9fdcb420f8a20d0a504ca0bd031a8b09f81063d12.jpg);}
+                                                                            #big-spot-blur--5 { background-image:url(//images-3.gog.com/3b8ada9abc62e13b3c08c9e4fd4c2be8fd9a2f1b4d7a65a0ef2b6e8bb7c915a2.jpg);}
+                                                                            #big-spot-blur--6 { background-image:url(//images-1.gog.com/16046fa233039162f13e551e343cb5672a19ea1c1251017224ce9facd8b22499.jpg);}
+                                                }
+        }
+
+    [gog-mosaic-ending-soon-link]{display:none!important}.mosaic-header .module-header2__section--secondary .module-header2__element{display:none} .frontpage-promo .mosaic{overflow:hidden;position:relative;margin-bottom:15px}.product-takeover__logo,.product-takeover__text{margin-top:0}.product-takeover__text{margin-bottom:50px}.product-takeover__container{padding-top:80px;padding-bottom:52px}.module--addon [gog-product="1730570049"] .product-state__price{visibility:hidden}@media (max-width:800px){.product-takeover{min-height:0}}@media (min-width:564px){.product-takeover{min-height:500px}.frontpage-promo .promo-item__bundle-tall .promo-item__title{margin-top:40%}}.banner-back-to-sale__title{color: #fff}.tabbed-bundles__header .module-header2__section.module-header2__section--secondary{display:none;}.promo-item__banner-giveaway-product .promo-item__description, .promo-item__banner-giveaway-product .promo-item__title, .promo-item__banner-product .promo-item__description, .promo-item__banner-product .promo-item__title { color: #fff;text-shadow: 0px 1px 2px #000; }.menu-friend{box-sizing:content-box;}
+Loja
+                    Comprado
+                
+                    Compre Já
+                
+                    Compre a Pré-venda
+                
+                Comprado
+            
+                Jogue Grátis
+            
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                         {{ customCategory.categoryTitle }}
+                Lançamentos
+                        Mais vendidos
+                        Promoções
+                        Ação
+                        Aventura
+                        Indie
+                        RPG
+                        Tiro
+                        Simulação
+                        Esportes & corrida
+                        Estratégia
+                        Filmes para jogadores
+                        Ver todos os jogos
+                        
+        Mais
+        GOG.comGOG GalaxyJunte-se a nósProblemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyForumsLista de desejos da comunidadeFacebookTwitterTwitch
+        Sobre
+        GOG.comGOG GalaxyJunte-se a nósComunidadeTodos os fórunsFóruns - discussão geralLista de desejos da comunidadeFacebookTwitterTwitch
+        Suporte
+        Problemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyFazer loginFazer login
+                Criar Conta
+            
+                Fazer login
+            
+                O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+            
+            Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+        
+                Por quê escolher o GOG.com?
+            Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.Sua contaJogos
+                0Filmes
+                0Lista de desejos
+                0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                Pedidos & configuraçõesIdioma & moeda
+
+                Idioma:
+                                English
+                            
+                                Deutsch
+                            
+                                Français
+                            
+                                Polski
+                            
+                                Português do Brasil
+                            
+                                Pусский
+                            
+                                中文(简体)
+                            Moeda:
+                            BRL
+                        
+                            USD
+                        Aplicar alteraçõesDeslogarSuas notificações
+                {{ notifications.notificationsCountLabel }} pendente
+            
+                There’s nothing to read yet
+            Limpar tudo
+
+                Fique conectado a tudo que está acontecendo
+            
+                Ver novas mensagens de bate-papo, respostas no fórum, convites de amigo, bem como anúncios importantes e ofertas relevantes para você
+            
+                                    GOG.com Fórum
+                                
+                                    GOG.com Lista de Desejos
+                                Convite de amizade recebidoConvite de jogo de Já disponível para compra Convite de amizade aceitoSeus amigos
+                on-line agora
+            
+                Friends list is currently empty
+            Gerenciar amigos
+
+                Conecte com seus amigos no GOG.com
+            
+                Fique conectado com seus amigos, comece a conversar e jogar facilmente com eles. Talvez convide novas pessoas para se juntar a seu círculo? :)     
+            
+                Convidar Amigos
+            OnlineOffline099+
+                Finalizar compra
+            Seu carrinhoSeu carrinho
+                    está vazio no momento.
+                  
+
+                Seu carrinho está vazio
+            
+                Explore grandes jogos e promoções
+            
+                Ver mais vendidos
+            
+                Sua lista de desejos
+            Grátis
+            Lista de desejos
+        Em sua Lista de desejosRemoverMover para lista de desejosEm sua Lista de desejosComprado%
+            
+            Remover
+            limpar
+                     Jogos
+                 Filmes
+                
+
+                    Nenhum resultado encontrado
+                
+                    Tente ajustar os termos de sua pesquisa. Você pode pesquisar por títulos, publicadores e desenvolvedores.
+                
+                    Ver todos os jogos
+                
+                    Ver filmes
+                
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                
+                    Comprado
+                
+                    Grátis
+                Em breveEM DES
+                        filme
+                    %
+                        VER  JOGOS
+                                VER  FILMES
+
+        Menu
+    LojaSobreComunidadeSuporte{{ customCategory.categoryTitle }}Jogos
+                            0Filmes
+                            0Lista de desejos
+                            0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                            Pedidos & configuraçõesIdioma & moedaDeslogarFazer login
+                    Criar Conta
+                
+                    Fazer login
+                
+                    O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+                
+                Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+            Por quê escolher o GOG.com?Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.......
+
+                    OFERTAS ESPECIAIS
+                
+            Promoção diária:            Night in The Woods
+                -30%
+            
+		9 : 28 : 54	Esta promoção expirou
+            Promo Especial:            This War of Mine, Beat Cop, Anomaly e mais com desconto de até
+                -90%
+            
+		45 : 28 : 54	Esta promoção expirou
+            Promo Especial:            War for the Overworld, HoMM, Settlers e mais com desconto de até
+                -75%
+            
+		21 : 28 : 54	Esta promoção expirou
+            Promo Especial:            Descent, Freespace 2, Star Trek e mais com desconto de até
+                -66%
+            
+		45 : 28 : 54	Esta promoção expirou
+            Promo Semanal:            Pizza Tycoon, Street Fighter Alpha 2, Alien Rampage
+                -90%
+            
+		21 : 28 : 54	Esta promoção expirou
+                    Destaque                WindowsDisponível agora: Mafia II & Mafia III0%CompradoGrátis22.19WindowsDisponível agora: The Curse of Monkey Island0%CompradoGrátis75.49Windows + Mac + LinuxDisponível agora: Surviving Mars40%CompradoGrátis16.79WindowsDisponível agora: Jalopy20%CompradoGrátis29.49Windows + Mac + LinuxCompra Antecipada: The Swords of Ditto0%CompradoGrátis47.49Windows + Mac + LinuxDisponível agora: Ash of Gods: Redemption
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					36.990%Thimbleweed ParkThimbleweed ParkEm breveEM DES2017Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					75.490%BATTLETECH Pre-OrderBATTLETECH Pre-OrderEm breveEM DES2018Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					65.990%Ken Follett’s The Pillars of the Earth - Season PassKen Follett’s The Pillars of the Earth - Season PassEm breveEM DES2017Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					4.9975%Heroes of Might and Magic® 3: CompleteHeroes of Might and Magic® 3: CompleteEm breveEM DES1999Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					149.990%Kingdom Come: DeliveranceKingdom Come: DeliveranceEm breveEM DES2018Aventura
+                                Populares
+                            
+                                Novos
+                            
+                                Em breve
+                            
+                                EM PROMOÇÃO
+                            
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					29.4950%Mafia II: Director’s CutMafia II: Director’s CutEm breveEM DES2011Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					74.4950%Mafia III Deluxe EditionMafia III Deluxe EditionEm breveEM DES2016Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					23.7950%MafiaMafiaEm breveEM DES2002Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					4.9975%Heroes of Might and Magic® 3: CompleteHeroes of Might and Magic® 3: CompleteEm breveEM DES1999Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					149.990%Kingdom Come: DeliveranceKingdom Come: DeliveranceEm breveEM DES2018Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					90.990%Divinity: Original Sin 2Divinity: Original Sin 2Em breveEM DES2017RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					44.4950%Mafia IIIMafia IIIEm breveEM DES2016Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					75.490%BATTLETECH Pre-OrderBATTLETECH Pre-OrderEm breveEM DES2018Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					22.190%The Curse of Monkey Island™The Curse of Monkey Island™Em breveEM DES1997Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					36.990%Neverwinter Nights 2 CompleteNeverwinter Nights 2 CompleteEm breveEM DES2006RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					9.1975%Heroes of Might and Magic® 5: BundleHeroes of Might and Magic® 5: BundleEm breveEM DES2006Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					65.990%Ken Follett’s The Pillars of the Earth - Season PassKen Follett’s The Pillars of the Earth - Season PassEm breveEM DES2017Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					31.8950%The Long DarkThe Long DarkEm breveEM DES2017Simulação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					37.000%FactorioFactorioEm breveEM DES2018Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					27.2970%War for the Overworld: Anniversary CollectionWar for the Overworld: Anniversary CollectionEm breveEM DES2015Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					19.6966%Vikings - Wolves of MidgardVikings - Wolves of MidgardEm breveEM DES2017RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					6.6967%Settlers® 2: 10th Anniversary, TheSettlers® 2: 10th Anniversary, TheEm breveEM DES2006Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					99.990%The Witcher 3: Wild Hunt - Game of the Year EditionThe Witcher 3: Wild Hunt - Game of the Year EditionEm breveEM DES2016RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					4.9975%Heroes of Might and Magic® 4: CompleteHeroes of Might and Magic® 4: CompleteEm breveEM DES2004Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					27.990%Into the BreachInto the BreachEm breveEM DES2018Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					19.9950%Settlers®: Rise of an Empire - Gold Edition, TheSettlers®: Rise of an Empire - Gold Edition, TheEm breveEM DES2008Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					75.490%Surviving MarsSurviving MarsEm breveEM DES2018Simulação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					36.4950%Shadow Warrior 2Shadow Warrior 2Em breveEM DES2016Tiro
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					36.990%Thimbleweed ParkThimbleweed ParkEm breveEM DES2017Aventura
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					16.990%SWAT 4: Gold EditionSWAT 4: Gold EditionEm breveEM DES2005Ação
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018Mais populares
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018MAIS NOVOS
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018Mais em breve
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018MAIS EM PROMOÇÃO
+	GOG.COM: SÓ O MELHOR DOS JOGOSConteúdo Sem DRMVocê compra - é seu
+				Política "Preço Justo"
+			Preços que fazem sentidoGarantia de dinheiro de voltaFunciona, nós garantimos"Sem DRM" significa que não há proteção de cópia, verificação online ou outras chatices. Aqui seus jogos e filmes são seus. Você deveria sentir-se dono de tudo que compra, como um livro ou um DVD.No GOG.com, não importa se estiver online ou offline, você nunca será impedido de acessar suas compras.Todos devem ser tratados de forma justa e não pagar a mais por compras só porque residem em outro lugar do mundo.Se um produto do GOG.com custar mais no seu país do que seu preço nos EUA, iremos bancar a diferença de valor de nossos próprios bolsos, dando-a para você como um valor em Carteira que poderá ser usado em quaisquer compras futuras.Sempre que comprar algo que não funciona, você deveria ficar tranquilo sabendo que pode devolver o produto.Não entendemos por que jogos ou filmes deveriam ter outras regras. Logo, se a sua compra não funcionar e não pudermos ajudar a fazer funcionar, você recebe seu dinheiro de volta.Nossa Garantia de Dinheiro de Volta cobre você por 30 dias.Conteúdo Sem DRMVocê compra - é seuPolítica "Preço Justo"Preços que fazem sentidoGarantia de dinheiro de voltaFunciona, nós garantimos
+    DESTAQUES
+…Compra antecipada: The Swords of Ditto
+                            5 dias atrás
+                        Mais forte que as canetas.  The Swords of Ditto, uma adorável RPG de ação com tantas histórias quanto heróis, está disponível para compra antecipada, livre de DRM, no GOG.com. Conforme o terrível mal Mormo se aproxima, numerosos heróis também se levantam e juram se colocar contra ele. Seus feitos, problemas e tesouros não reclamados ficarão pela re…Promoção Semanal: Há quanto tempo não nos vemos? - Até 90% de desconto
+                            6 dias atrás
+                        Olha só quem está aqui! Promoções, não é mesmo? É difícil dizer quando termina uma e começa outra hoje em dia. É como um desfile constante de jogos, dançando juntos a mesma música com coisas grandes e brilhantes em seus pescoços, anunciando descontos irresistíveis. Claro, de vez em quando algum jogo novo se junta a diversão. Mas como fazer para ide…Lançamento: Ash of Gods: Redemption
+                            23 mar
+                        Matando em nome dele. Ash of Gods: Redemption está disponível agora, livre de DRM, no GOG.com.Quando este mundo voltas às cinzas, os deuses adormecidos voltarão – os reapers garantirão isso. Três heróis tentarão detê-los, se aventurando em uma história épica que mistura mecânicas de RPG em turnos, com uma história em constante evolução e jogabilida…Lançamento: The Curse of Monkey Island & Maniac Mansion
+                            22 mar
+                         - 1 comentário                    Olhe para aquilo! Seria um…tentáculo de três cabeças? Os clássicos celebrados  The Curse of Monkey Island e  Maniac Mansion (-33%) voltaram, livres de DRM no GOG.com.Para celebrar, The Secret of Monkey Island: SE e Monkey Island 2: SE estão com 65% de desconto até 26 de Março, 11h00. Compre-os em conjunto com o Curse of Monkey Island para ganhar um…Compra antecipada: Dead in Vinland
+                            22 mar
+                        Exilado na rua das dores. Dead in Vinland está disponível para compra antecipada, livre de DRM, no GOG.com.Exilados de seu vilarejo. Uma família em desgraça. No entanto, sem tempo para desesperar-se. Hora de arregaçar as mangas e criar um novo lar nesta ilha estranha. Sobreviva as dificuldades, gerencie tarefas diárias, explore, interaja com os cur…Lançamento: Pizza Connection 3
+                            22 mar
+                        Uma fatia do sucesso corporativo. Pizza Connection 3 está disponível agora, livre de DRM, no GOG.com.Um forte e irresistível perfume permeia as ruas de Roma. Parece pepperoni com muçarela, azeite de oliva e… Estou sentindo um toque de manjericão? Ele está vindo de um agradável pequeno restaurante na esquina, cujo proprietário agora saiu para se tor…Em Desenvolvimento: Ion Maiden
+                            21 mar
+                        Be quick or be dead. Ion Maiden está disponível agora, livre de DRM, no GOG.com.Bombshell voltou, mais invocada, determinada e pixelada do que nunca. Dessa vez com violência em primeira pessoa, ela parte em uma fúria justa contra um líder de cult insano e seu exército cibernético. Ação gonzo FPS, níveis multi-caminhos cheios de segredos, armas e tr…Lançamento: Close Combat: Invasion: Normandy, Cross of Iron, Modern Tactics
+                            20 mar
+                        A segunda vinda da clássica série de RTS. Mais três jogos da série Close Combat acabam de chegar, livres de DRM e com até 50% de desconto até 27 de Março, 10h00min.Modern Tactics, Cross of Iron e Invasion: Normandy - Utah Beach to Cherbourg se juntam às nossas fileiras, fazendo com que a invasão da Close Combat esteja mais próxima de se completar.I…Em Breve: Simon, the Sorcerer 1 & 2: 25th Anniversary Edition
+                            20 mar
+                        Indicador de Hot Spot? Que tipo de feitiçaria é essa?!  Simon the Sorcerer &  Simon the Sorcerer 2chegará em breve, livre de DRM, no GOG.com.Ele pode ser arrogante. Ele pode ser irritante. Ele pode enlouquecer seus personagens de contos de fadas favoritos. Agora, além disso, ele foi aprimorado para seu Aniversário de 25 anos! Apresentando um sistem…ATUALIZAÇÃO - Lançamento: Surviving Mars | 10% se você possui Tyranny
+                            19 mar
+                        Sob as cúpulas. ATUALIZAÇÃO: Atenção, todos, um novo Kyros Edict está em efeito: Todos que possuem Tyranny no GOG.com ou possuirão até 31 de março, recebem um desconto de 10% em Surviving Mars até essa data!Essa oferta também funciona retroativamente, então se você já possui ambos os jogos por favor contate nossa equipe de Suporte que te guiará pel…Promoção Semanal: Mundos para você viver - Até 85% de desconto
+                            19 mar
+                        Explore mundos divertidos, peculiares ou simplesmente extraordinários. Algumas vezes, fugir desse mundo pode fazer bem para a alma, sabe? Não que eu esteja dizendo que este mundo é banal. Ou deprimente. Ou muito cheio de gente. Certamente não. Mas existem diversos outro lugares por aí para serem explorados e nós temos o guia perfeito para te ajudar…Lançamento: Realpolitiks - New Power DLC
+                            15 mar
+                        2 segundos para a meia-noite.  New Power, um pacote DLC para  Realpolitiks, está disponível agora com 10% de desconto até 22 de Março.Uma nuvem nuclear está pairando sobre o mundo. Entre na arena política global como o EUA, a China, a Coréia do Norte ou o Japão e tente desarmar a situação ou explorá-la para estender o poder de sua nação. Mantenha o…Lançamento: Attack of the Earthlings
+                            15 mar
+                        Herói do Enxame! Attack of the Earthlings está disponível agora, com 10% de desconto até 22 de março.Invasores alienígenas estão atacando... Com suas máquinas estranhas, fome constante por recursos e uma perturbadora falta de membros adicionais! Bem, você e seus colegas Swarmers não vão aceitar isso! Utilize furtividade e agressão em turnos para co…Lançamento: The Long Reach
+                            14 mar
+                        Grite em um pequeno sonho comigo. The Long Reach está disponível agora, livre de DRM no GOG.com.A cidade de New Hampshire está sendo despedaçada pelo medo. Os pesadelos que estão andando pelas ruas são seus. E são meus. Eles não deveriam estar aqui.Descubra o caminho para sair desta situação horrível, converse com estranhos suspeitos, corra se prec…Lançamento: 15 Days
+                            14 mar
+                        Algumas pessoas só querem ver o mundo aprender. 15 Days está disponível agora, com 50% de desconto até 21 de março, 11:00h.Um trio de Robin Hoods modernos tem invadido museus de prestígio e usado os lucros para ajudar instituições de caridade. Porém, as coisas se complicam rapidamente quando um homem aparece morto e os mestres da fuga se veem preso…Lançamento: The Mystery of the Druids
+                            12 mar
+                        Entre a foice e a espada. The Mystery of the Druids está disponível agora, livre de DRM, no GOG.com.Uma série de assassinatos, mais horríveis que o grito de dor de dente de um druida, deixou a Scotland Yard aturdida. Poderiam ser o trabalho de uma ordem maligna, decidida a destruir o mundo? Aponte e clique em dezenas de cenários, ambientados no pas…Mistérios Esperam por Você na Promoção de St. Patrick's Day no GOG.com
+                            12 mar
+                        Receba Jogos Misteriosos em Chapéus de Leprechaun • mais de 300 ofertas com até 90% de descontoOh, Paddy, querido, você não ouviu as noticias por ai? É o começo da Promoção de St. Patrick's Day, que vai durar a semana toda!Venha participar das festividades – estamos começando com mais de 300 ofertas com até 90% de desconto e Chapéus de Leprechaun c…Em breve: Banner Saga 3
+                            9 mar
+                        Uma canção de gelo e mais gelo. Banner Saga 3, chegará em breve – dia 1º – no GOG.com.Esta sensação épica em turnos, coberta de neve, sacrifícios heroicos e mitologia nórdica está confirmada finalmente. Continue sua jornada através de cenários belamente desenhados, molde a história com suas decisões e prepare-se para ser desafiado a cada passo do c…Lançamento: ABZU & Last Day of June & Ember
+                            9 mar
+                         - 1 comentário                    Mergulhe em uma masmorra repleta de emoções de alto nível.  ABZÛ,  Ember, e  Last Day of June, três jogos fascinantes da 505 estão disponíveis agora com 50%, 60% e 40% de desconto respectivamente até 23 de março.Do mesmo diretor de arte aclamado do jogo exclusivo para Playstation, Journey, ABZÛ submerge o jogador em um mundo mágico submerso. Mergul…Em breve: Wizard of Legend
+                            9 mar
+                        Minha nossa, grandes bolas de fogo! Wizard of Legend chegará em breve, livre de DRM, no GOG.com.Os Chaos Trials fazem com que todos os aspirantes a spellslingers se reúnam em Lanova para participar. Você quer ser o melhor, por isso deve completar os desafios dinâmicos feitos para levar ao máximo suas habilidades de conjurar magias. Combinações devaMAIS DESTAQUES
+                        Resgatar código
+                    
+                        Resgate seu jogo
+                    
+                        Fale conosco
+                    
+                        oportunidades de trabalho
+                    
+                        Enviar seu jogo
+                    Idioma:Moeda:JogosEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosFilmesEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosEnviar seu filmeSuportePerguntas Frequentes do SiteSuporte de jogosPolíticasFale conoscoMinha ContaMinha biblioteca
+                    Pedidos & Configurações
+                    ComunidadeFórunsLista de desejos da comunidade
+    Facebook
+ 
+    Twitter
+ 
+    Google Plus
+ 
+    Tumblr
+ 
+    Youtube
+ 
+    Twitch
+ 
+    Reddit
+ 
+    Rss
+ 
+                            Jurídico
+                         
+                                            
+                                Reorganização da companhia
+                             
+                        
+                            Política de Cookies				
+                        
+                            Nossos agradecimentos
+                          
+                
+                    GOG Sp. z o.o.
+                    2018.
+                    Parte do grupo de .
+                
+

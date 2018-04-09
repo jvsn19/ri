@@ -1,0 +1,503 @@
+
+
+        	Heroes of Might and Magic® 3: Complete -75% em GOG.com
+			
+            [ng-cloak], .ng-cloak, .ng-hide { display:none !important; }
+        
+
+
+
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988_bg_480.jpg ); }
+			@media (min-width:481px) {
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988_bg_800.jpg ); }
+			}
+			@media (min-width:801px) {
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988_bg_1366.jpg ); }
+			}
+			@media (min-width:1367px) {
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988_bg_1680.jpg ); }
+			}
+			@media (min-width:1681px) {
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988_bg_1920.jpg ); }
+			}
+			@media (min-width:1921px) {
+				.productcard-wrapper { background-image: url(//images-4.gog.com/cd47dd7a5938c4db4f9cd161746a362ec72c07a0f9bd253d423ad5af5f87a988.jpg ); }
+			}
+		[gog-mosaic-ending-soon-link]{display:none!important}.mosaic-header .module-header2__section--secondary .module-header2__element{display:none} .frontpage-promo .mosaic{overflow:hidden;position:relative;margin-bottom:15px}.product-takeover__logo,.product-takeover__text{margin-top:0}.product-takeover__text{margin-bottom:50px}.product-takeover__container{padding-top:80px;padding-bottom:52px}.module--addon [gog-product="1730570049"] .product-state__price{visibility:hidden}@media (max-width:800px){.product-takeover{min-height:0}}@media (min-width:564px){.product-takeover{min-height:500px}.frontpage-promo .promo-item__bundle-tall .promo-item__title{margin-top:40%}}.banner-back-to-sale__title{color: #fff}.tabbed-bundles__header .module-header2__section.module-header2__section--secondary{display:none;}.promo-item__banner-giveaway-product .promo-item__description, .promo-item__banner-giveaway-product .promo-item__title, .promo-item__banner-product .promo-item__description, .promo-item__banner-product .promo-item__title { color: #fff;text-shadow: 0px 1px 2px #000; }.menu-friend{box-sizing:content-box;}
+.st0{fill:none;stroke:#000;stroke-miterlimit:10}
+            ADICIONAR SUA RESENHA PARA Heroes of Might and Magic® 3: CompleteMinha avaliaçăo
+                {{ view.review.titleLimit - view.review.title.length }}
+            
+            {{ view.review.textLimit - view.review.text.length }}
+        Regras para ResenhasCoisas para considerar enquanto escreve sua resenha.ENVIE SUA RESENHAENVIE SUA RESENHA
+            TENHA ISSO EM MENTE AO ESCREVER SUA RESENHA:
+        
+                    Resenhe o jogo
+                
+                    Sua resenha deve se concentrar em sua experiência de jogo, apenas. Deixe o jogo se sustentar por seus próprios méritos.
+                
+                    Evite distrações
+                
+                    Para discutir assuntos como novidades, preço ou a comunidade, use nossos fóruns. Para pedir jogos novos e novos serviços para o site ou o GOG Galaxy, use a Lista de Desejos da Comunidade. Para obter suporte técnico para seu jogo, entre em contato com o nosso time de suporte.
+                
+                    Critique com responsabilidade
+                
+                    Para manter a nossa seção de Resenhas limpa e útil, iremos remover quaisquer resenhas que quebrem estas diretrizes, ou nossos Termos de Uso.
+                
+            Ok, entendi        
+                            Atalhos de teclado
+                         
+						 
+						ESC 
+						
+                                Abrir imagem originalLoja
+                    Comprado
+                
+                    Compre Já
+                
+                    Compre a Pré-venda
+                
+                Comprado
+            
+                Jogue Grátis
+            
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                        
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                Comprar
+                    Comprado
+                
+                    Grátis
+                {{ product.title }}
+                        filme
+                    Em breveEM DES%
+                         {{ customCategory.categoryTitle }}
+                Lançamentos
+                        Mais vendidos
+                        Promoções
+                        Ação
+                        Aventura
+                        Indie
+                        RPG
+                        Tiro
+                        Simulação
+                        Esportes & corrida
+                        Estratégia
+                        Filmes para jogadores
+                        Ver todos os jogos
+                        
+        Mais
+        GOG.comGOG GalaxyJunte-se a nósProblemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyForumsLista de desejos da comunidadeFacebookTwitterTwitch
+        Sobre
+        GOG.comGOG GalaxyJunte-se a nósComunidadeTodos os fórunsFóruns - discussão geralLista de desejos da comunidadeFacebookTwitterTwitch
+        Suporte
+        Problemas técnicos em jogosPedidos e pagamentosConta e siteDownloadsGOG GalaxyFazer loginFazer login
+                Criar Conta
+            
+                Fazer login
+            
+                O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+            
+            Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+        
+                Por quê escolher o GOG.com?
+            Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.Sua contaJogos
+                0Filmes
+                0Lista de desejos
+                0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                Pedidos & configuraçõesIdioma & moeda
+
+                Idioma:
+                                English
+                            
+                                Deutsch
+                            
+                                Français
+                            
+                                Polski
+                            
+                                Português do Brasil
+                            
+                                Pусский
+                            
+                                中文(简体)
+                            Moeda:
+                            BRL
+                        
+                            USD
+                        Aplicar alteraçõesDeslogarSuas notificações
+                {{ notifications.notificationsCountLabel }} pendente
+            
+                There’s nothing to read yet
+            Limpar tudo
+
+                Fique conectado a tudo que está acontecendo
+            
+                Ver novas mensagens de bate-papo, respostas no fórum, convites de amigo, bem como anúncios importantes e ofertas relevantes para você
+            
+                                    GOG.com Fórum
+                                
+                                    GOG.com Lista de Desejos
+                                Convite de amizade recebidoConvite de jogo de Já disponível para compra Convite de amizade aceitoSeus amigos
+                on-line agora
+            
+                Friends list is currently empty
+            Gerenciar amigos
+
+                Conecte com seus amigos no GOG.com
+            
+                Fique conectado com seus amigos, comece a conversar e jogar facilmente com eles. Talvez convide novas pessoas para se juntar a seu círculo? :)     
+            
+                Convidar Amigos
+            OnlineOffline099+
+                Finalizar compra
+            Seu carrinhoSeu carrinho
+                    está vazio no momento.
+                  
+
+                Seu carrinho está vazio
+            
+                Explore grandes jogos e promoções
+            
+                Ver mais vendidos
+            
+                Sua lista de desejos
+            Grátis
+            Lista de desejos
+        Em sua Lista de desejosRemoverMover para lista de desejosEm sua Lista de desejosComprado%
+            
+            Remover
+            limpar
+                     Jogos
+                 Filmes
+                
+
+                    Nenhum resultado encontrado
+                
+                    Tente ajustar os termos de sua pesquisa. Você pode pesquisar por títulos, publicadores e desenvolvedores.
+                
+                    Ver todos os jogos
+                
+                    Ver filmes
+                
+                    ASA
+                
+                    Comprado
+                
+                    Grátis
+                
+                    Comprado
+                
+                    Grátis
+                Em breveEM DES
+                        filme
+                    %
+                        VER  JOGOS
+                                VER  FILMES
+
+        Menu
+    LojaSobreComunidadeSuporte{{ customCategory.categoryTitle }}Jogos
+                            0Filmes
+                            0Lista de desejos
+                            0Resgatar códigoAmigosBate-papoRespostas de fórunsSua Carteira
+                            Pedidos & configuraçõesIdioma & moedaDeslogarFazer login
+                    Criar Conta
+                
+                    Fazer login
+                
+                    O GOG.com é uma plataforma de distribuição digital - uma loja online com um catálogo selecionado de jogos, um cliente opcional que lhe dá liberdade de escolha e uma comunidade dinâmica de jogadores.
+                
+                Tudo isso nasceu de um profundo amor pelos jogos, cuidado máximo com nossos clientes e a crença de que você deve ter posse sobre aquilo que compra.
+            Por quê escolher o GOG.com?Selecionando o melhor dos jogos. Uma seleção de grandes jogos, de sucessos modernos até clássicos atemporais, que você não pode perder.Cliente em primeiro lugar. Oferecer um suporte amigável, eficiente e sempre de olho em nossos usuários.Plataforma focada no jogador. Estamos aqui para fazer a diferença em como você compra e joga seus jogos, dando a você liberdade de escolha e uma experiência descomplicada.......Heroes of Might and Magic® 3: Complete8469 votos
+				                                                                                                                                Windows
+			    English, {{ langToShow }} & mais
+    Galeria de mídia
+COMPRAR ITEMComprar item – compradoComprar item – pré-venda
+                    ADICIONADO AO CARRINHO
+                19.994.99
+                            Vocę economiza 15.00
+                                                            (75%)
+                                                    
+                        Grátis                    {{ product.price.amount }}{{ product.price.baseAmount }}{{ product.price.amount }}
+                    
+                        Vocę economiza                        {{ product.price.discountDifference }}                        ({{ product.price.discountPercentage }}%)
+                    {{ product.price.baseAmount }}
+                        Grátis                    
+                    
+                        Vocę economiza                        {{ product.price.discountDifference }}ADICIONAR AO CARRINHO            
+                COMPRE JÁ            SEM DRM. Sem ativação ou conexão online para jogar.
+                GARANTIA DO DINHEIRO DE VOLTA. 30 dias de cobertura após a compra.
+                    COMPRAR SÉRIEComprar série  – completarComprar série  – comprada136.9442.04
+                             Vocę economiza                         94.90
+                                                      (69%)
+                                                 {{ gameProductData.series.price.amount }}Grátis{{ gameProductData.series.price.baseAmount }}{{ gameProductData.series.price.amount }}
+						
+                            Vocę economiza                            {{ gameProductData.series.price.discountDifference }}                            ({{ gameProductData.series.price.discountPercentage }}%)
+                        {{ gameProductData.series.price.baseAmount }}Grátis
+						
+                            Vocę economiza                            {{ gameProductData.series.price.discountDifference }}ADICIONAR AO CARRINHO                
+                    ADICIONADO AO CARRINHO                
+                    COMPRE JÁ                Heroes of Might and Magic®Heroes of Might and Magic®Em breveEM DES1996EstratégiaHeroes of Might and Magic® 2: GoldHeroes of Might and Magic® 2: GoldEm breveEM DES1996EstratégiaHeroes of Might and Magic® 3: CompleteHeroes of Might and Magic® 3: CompleteEm breveEM DES1999EstratégiaHeroes of Might and Magic® 4: CompleteHeroes of Might and Magic® 4: CompleteEm breveEM DES2004EstratégiaHeroes Chronicles: All chaptersHeroes Chronicles: All chaptersEm breveEM DES2000EstratégiaHeroes of Might and Magic® 5: BundleHeroes of Might and Magic® 5: BundleEm breveEM DES2006EstratégiaCompartilharTweetCompartilhar
+    colocado na lista de desejos
+
+    colocar na lista de desejos
+
+    colocar na lista de desejos
+DescriçăoConteúdo incluso:
+                    3 manuais (209 páginas)+
+                    getting started guide+
+                    trilha sonora+
+                    creature tablesSobre: Includes Heroes of Might & Magic III and its expansions: Armageddon's Blade and The Shadow of Death
+Murder, treachery, resurrection, savage battles and ultimately-freedom!When Erathia's King Gryphonheart is murdered by traitors he is resurrected as an undead warlord who leads a ruthless invasion of his former Kingdom.
+            Leia maisSobre: Includes Heroes of Might & Magic III and its expansions: Armageddon's Blade and The Shadow of Death
+Murder, treachery, resurrection, savage battles and ultimately-freedom!When Erathia's King Gryphonheart is murdered by traitors he is resurrected as an undead warlord who leads a ruthless invasion of his former Kingdom. Little resistance is met until his daughter Catherine, Queen of Enroth, returns to her homeland commanding an army of elite Enrothian warriors. Meanwhile the Necromancers raise large hordes of undead and advance towards the Erathian capitol. Queen Catherine receives the aid of her father's survived generals and embarks on a crusade to reclaim her lost land.You control the greatest heroes and fiercest creatures in a conflict of epic proportions, as Cathereine fights to restore her family's rightful reign, uncover her father's killers and free him from the dark prison of his undead body! This is a must have for every Might and Magic series fan! 
+            Insanely addictive gameplay that will make you want to play “just one more turn” over and over againGreat multiplayer, especially when playing in hot seat mode on one PCRESENHAS DE USUÁRIOSAvaliação média:Aguardando mais avaliaçőes
+                    Seja o primeiro a avaliar
+                
+                    Minha resenha: criar agoraMinha avaliação:{{  review.description }}{{ review.source }}
+                Ainda năo existem resenhas.
+            
+                            {{ review.title }}
+                        
+                            
+                                                        por     
+    {{ ::review.author.name }}{{ ::review.author.name }}
+            Pedimos desculpas, dados do usuário estão atualmente indisponíveis. Tente novamente mais tarde.
+        Ver lista de desejosIniciar conversaConvidar amigosConvidar amigosAceitar conviteAceitar conviteConvite pendente...Usuário desde {{ user.formattedDateUserJoined }}
+			Amizade desde {{ user.formattedDateUserFriended }}
+			
+                Desbloquear bate-papo
+            Usuário bloqueado
+			A lista de desejos deste usuário não é pública.Você não pode conversar com este usuário devido às configurações de privacidade dele ou suas.Você não pode conversar com este usuário porque o bloqueou.Você não pode convidar este usuário porque o bloqueou.Leia mais
+                    
+	                {{ review.added | toMilis | date:reviewDateformat }}
+                    
+	                |
+                        Isso foi útil para vocę?
+                        SimNăo
+                        Agradecemos pelo seu voto!
+                    ({{review.helpfulVotes}} de {{review.totalVotes}} usuários consideraram isto útil)relatório
+                    de                    {{ totalPages }}
+									ESRB Avaliaçăo: Todos (com Violência Animada)
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							
+        
+        © 1999 Ubisoft Entertainment. All Rights Reserved. Heroes of Might and Magic, Heroes, Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.
+    Detalhes do jogoGênero:Estratégia
+                         -                                                                                             Em turnos
+                         -                                                                                             FantasiaRoda em:
+                                                                                                                                                                                                                                                                                        Windows (XP, Vista, 7, 8, 10)
+                Idiomas:Áudio e texto: English, françaisLançado em:1 de junho de 1999Tamanho:0.9 GBEmpresa:New World Computing, Inc.
+            /
+            UbisoftAvaliação:
+									ESRB Avaliaçăo: Todos (com Violência Animada)
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							Características do jogoum jogadormultijogadorSaves na NuvemRequisitos de sistema
+            Requisitos mínimos de sistema - Windows:
+        
+
+        Windows XP or Windows Vista, 1 GHz Processor (1.4 GHz recommended), 256MB RAM (512 recommended), 3D graphics card compatible with DirectX 7 (compatible with DirectX 9 recommended), Mouse, Keyboard
+    
+            Multiplayer notice: Heroes of Might and Magic® 3: Complete supports multiplayer over LAN and hotseat.Please be advised that Windows 10 operating system will receive frequent hardware driver and software updates following its release; this may affect game compatibility
+        
+		QUEM COMPROU ESTE JOGO TAMBÉM LEVOU    
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					4.9975%Heroes of Might and Magic® 4: CompleteHeroes of Might and Magic® 4: CompleteEm breveEM DES2004Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					4.9975%Heroes of Might and Magic® 2: GoldHeroes of Might and Magic® 2: GoldEm breveEM DES1996Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					9.1975%Heroes of Might and Magic® 5: BundleHeroes of Might and Magic® 5: BundleEm breveEM DES2006Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					16.990%The Witcher: Enhanced EditionThe Witcher: Enhanced EditionEm breveEM DES2007RPG
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					19.990%Heroes Chronicles: All chaptersHeroes Chronicles: All chaptersEm breveEM DES2000Estratégia
+                        Comprado
+					
+                        Grátis
+					
+                          Comprado
+                        
+                            Grátis
+                        
+                        ASA                    
+						Comprado					
+						Grátis					0%Em breveEM DESFILME2018MAIS RECOMENDAÇŐESCrie o seu
+                GOGMIXES: DESCUBRA MAIS JOGOS
+            votos
+                                                                por     
+    {{ ::mix.user.name }}{{ ::mix.user.name }}
+            Pedimos desculpas, dados do usuário estão atualmente indisponíveis. Tente novamente mais tarde.
+        Ver lista de desejosIniciar conversaConvidar amigosConvidar amigosAceitar conviteAceitar conviteConvite pendente...Usuário desde {{ user.formattedDateUserJoined }}
+			Amizade desde {{ user.formattedDateUserFriended }}
+			
+                Desbloquear bate-papo
+            Usuário bloqueado
+			A lista de desejos deste usuário não é pública.Você não pode conversar com este usuário devido às configurações de privacidade dele ou suas.Você não pode conversar com este usuário porque o bloqueou.Você não pode convidar este usuário porque o bloqueou.
+                    MAIS GOGMIXES                
+            Năo existem GOGmixes ainda com este item.
+        
+									ESRB Avaliaçăo: Todos (com Violência Animada)
+							
+									USK Avaliação: Aprovado para maiores de 12 anos
+							
+        
+        © 1999 Ubisoft Entertainment. All Rights Reserved. Heroes of Might and Magic, Heroes, Ubisoft, Ubi.com and the Ubisoft logo are trademarks of Ubisoft Entertainment in the U.S. and/or other countries.
+    
+                        Resgatar código
+                    
+                        Resgate seu jogo
+                    
+                        Fale conosco
+                    
+                        oportunidades de trabalho
+                    
+                        Enviar seu jogo
+                    Idioma:Moeda:JogosEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosFilmesEM PROMOÇÃOMAIS VENDIDOSLançamentos mais recentesMais votadosEnviar seu filmeSuportePerguntas Frequentes do SiteSuporte de jogosPolíticasFale conoscoMinha ContaMinha biblioteca
+                    Pedidos & Configurações
+                    ComunidadeFórunsLista de desejos da comunidade
+    Facebook
+ 
+    Twitter
+ 
+    Google Plus
+ 
+    Tumblr
+ 
+    Youtube
+ 
+    Twitch
+ 
+    Reddit
+ 
+    Rss
+ 
+                            Jurídico
+                         
+                                            
+                                Reorganização da companhia
+                             
+                        
+                            Política de Cookies				
+                        
+                            Nossos agradecimentos
+                          
+                
+                    GOG Sp. z o.o.
+                    2018.
+                    Parte do grupo de .
+                
+
