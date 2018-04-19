@@ -22,7 +22,7 @@ def takeAllFiles(file_type):
 
 def removePoints(html_content):
     html_content = re.sub("\n+|\t+", " ", html_content)
-    html_content = re.sub("[!\d+,.;@#?!&$--)(:/}{|=]+|•|©|﻿|™|®|×| x ","",  html_content)
+    html_content = re.sub("[!\d+,.;@#?!&$--)(:/}{|=]+|•|©|﻿|™|®|×| x "," ",  html_content)
     return html_content
 
 def putContentInFile(in_type, out_type):
@@ -35,16 +35,19 @@ def putContentInFile(in_type, out_type):
         file.write(html_content)
         file.close()
 
-putContentInFile("html", "txt")
+#putContentInFile("html", "txt")
 
 def tokenizeFiles():
     files = takeAllFiles("txt")
     
     vec_doc = [open(files[i], "r").read() for i in range(len(files))]
+    
     vectorizer = CountVectorizer()
-    #print([open(files[0], "r").read()])
-    print(vectorizer.fit_transform(vec_doc).todense())
-    #vector = vectorizer.transform(files)
-    #print(vectorizer.vocabulary_)
-
+    doctermMatrix = vectorizer.fit_transform(vec_doc)
+    #dataFrame = pd.DataFrame()
+    print(vectorizer.vocabulary_)
+    print(doctermMatrix.todense())
+    dataFrame = pd.DataFrame(doctermMatrix.todense())
+    print(dataFrame)
+    dataFrame.to_csv("data/docterm.csv", index = False)
 tokenizeFiles()
