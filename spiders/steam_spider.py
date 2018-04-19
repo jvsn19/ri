@@ -10,6 +10,7 @@ class Steam_Spider():
     def search_pages(self, deep = 2):
         # Get all content of a search page. From here we must navigate through all items on this and get the useful
         # attrs: name, price, review, etc.
+        # deep: self-explained. How many pages we must search
         curr_page = 1
         url = self.__basic_url
         urls = set()
