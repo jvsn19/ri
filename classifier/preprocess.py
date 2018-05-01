@@ -5,7 +5,10 @@ import re
 import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from bs4 import BeautifulSoup
-
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import PorterStemmer
+import codecs
 
 def takeHtmlContent(path):
     page = BeautifulSoup(open(path), "html.parser")
@@ -16,7 +19,7 @@ def takeHtmlContent(path):
     return page_content
 
 def takeAllFiles(file_type):
-    files = glob.glob("*/*/*." + file_type)
+    files = glob.glob("sites/*/*/*." + file_type)
 
     return files
 
@@ -35,19 +38,32 @@ def putContentInFile(in_type, out_type):
         file.write(html_content)
         file.close()
 
-#putContentInFile("html", "txt")
+putContentInFile("html", "txt")
+
+def Stemming(vec_doc):
+    stemmer = PorterStemmer()
+    analyzer = CountVectorizer().build_analyzer()
+    
+    return (stemmer.stem(w) for w in analyzer(vec_doc))
+
+def stop_words():
+    stopWords = set(stopwords.words('english'))
+    
+    return stopWords
 
 def tokenizeFiles():
     files = takeAllFiles("txt")
     
-    vec_doc = [open(files[i], "r").read() for i in range(len(files))]
+    vec_doc = [codecs.open(files[i], "r", encoding='utf-8').read() for i in range(len(files))]
     
-    vectorizer = CountVectorizer()
+    vec_class = [re.search("\w+/(\w+)/\w+", files[i]).group(1) == "positivePages" and 1 or 0 
+                for i in range(len(files))]
+    #print(vec_doc)
+    vectorizer = CountVectorizer(encoding='utf-8')
     doctermMatrix = vectorizer.fit_transform(vec_doc)
-    #dataFrame = pd.DataFrame()
-    print(vectorizer.vocabulary_)
-    print(doctermMatrix.todense())
+    
     dataFrame = pd.DataFrame(doctermMatrix.todense())
-    print(dataFrame)
+    dataFrame["class"] = vec_class
     dataFrame.to_csv("data/docterm.csv", index = False)
-tokenizeFiles()
+
+#tokenizeFiles()

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+
+<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content="en-US" name="language"/>
+<meta content="general" name="rating"/>
+<meta content="OnePlay - Play unlimited PC &amp; Android games for a low monthly fee. PC and MAC games to download, purchase or rent. Best game store with many digital games for Origin, Steam, Ubisoft and Battlenet E-mail delivery of CD-keys" name="description"/>
+<meta content="download games, pc games, mac game downloads, game downloads, games for download, downloadable games, full pc game downloads, pc games, rent games, subscription games, pre order games, cd-key, battlefield, origin, steam, diablo, Call of Duty, Football Manager, FarCry, World of Warcraft" name="keywords"/>
+<link href="/css/index/bootstrap-select.min.css" rel="stylesheet" type="text/css"/>
+<link href="/assets/11d4c763/listview/styles.css" rel="stylesheet" type="text/css"/>
+<link href="/css/index/pager.css" rel="stylesheet" type="text/css"/>
+<link href="/css/index/jquery/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+<script src="/assets/77785924/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/77785924/jquery.ba-bbq.js" type="text/javascript"></script>
+<script src="/js/index/bootstrap-select.min.js" type="text/javascript"></script>
+<script src="/js/facebook.js" type="text/javascript"></script>
+<script src="/js/index/cartMenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+
+                function onChangeListViewDropdownSort(lv, lvId){                                        
+                    window.location = $(lv).find("option:selected").attr("rel");  
+                }
+/*]]>*/
+</script>
+<title>Buy and Rent PC &amp; MAC games - Rent unlimited PC &amp; MAC games at the best prices</title>
+<meta content="width=1160" name="viewport"/>
+<link href="/images/index/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/css/sass_compiled/common.css" rel="stylesheet" type="text/css"> <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> <!--[if lt IE 9]>  <link rel="stylesheet" type="text/css" href="/css/ie.css" /> <![endif]-->
+<script type="text/javascript">
+$(function(){
+    if($.browser.msie && $.browser.version <= 9){$("[placeholder]").focus(function(){if($(this).val()==$(this).attr("placeholder")) $(this).val("");}).blur(function(){if($(this).val()=="") $(this).val($(this).attr("placeholder"));}).blur();$("[placeholder]").parents("form").submit(function(){$(this).find('[placeholder]').each(function(){if ($(this).val() == $(this).attr("placeholder")){$(this).val("");}})});}});
+</script>
+</link></head>
+<body><script type="text/javascript">
+/*<![CDATA[*/
+var cartLoadingText = "Please wait...";
+/*]]>*/
+</script>
+<div id="root">
+<div id="facebook_connect_form" style="display: none;">{*For Facebook connect form*}</div>
+<div id="fb-root"></div>
+<div class="" id="header">
+<div class="layout">
+<div class="nav-top">
+<ul>
+<li><a href="/en/faq">FAQ</a></li>
+<li></li>
+<li><a href="https://www.oneplay.com/en/signup">Redeem code</a></li>
+</ul>
+<div class="social">
+<a class="fb" href="https://www.facebook.com/Oneplaycom" target="_blank" title="Facebook">F</a> <a class="tw" href="https://twitter.com/Oneplaycom" target="_blank" title="Twitter">T</a> <a class="gp" href="http://www.plus.google.com/+Oneplaycom" target="_blank" title="google plus">G+</a> <a class="inst" href="http://www.instagram.com/oneplaycom" target="_blank" title="Instagram">I</a> <a class="mail" href="/en/news" title="Subscribe newsletter">Subscribe</a> </div>
+</div>
+<div class="right_box">
+<a class="install" href="http://cdn.oneplay.com/rental/winapp/OnePlay.exe">Install OnePlay</a>
+<div class="login_form">
+<div class="lanuages"><div class="language_menu">
+<a class="language_select" href="javascript:void(0);"><img alt="" src="https://static.oneplay.com/materials/images/languages/en/1_thumbnail_1.jpg"/> en </a>
+<ul style="z-index: 2000; display: none;">
+<li><a href="/en/language/1/return/en/download/categories/platform/android" title="American English"><img alt="American English" src="https://static.oneplay.com/materials/images/languages/en/1_thumbnail_1.jpg" title="American English"/> en</a></li>
+<li><a href="/en/language/2/return/dk/download/categories/platform/android" title="Dansk"><img alt="Dansk" src="https://static.oneplay.com/materials/images/languages/dk/2_thumbnail_1.png" title="Dansk"/> dk</a></li>
+<li><a href="/en/language/4/return/se/download/categories/platform/android" title="Swedish"><img alt="Swedish" src="https://static.oneplay.com/materials/images/languages/se/4_thumbnail_1.jpg" title="Swedish"/> se</a></li>
+<li><a href="/en/language/6/return/nl/download/categories/platform/android" title="Nederlands"><img alt="Nederlands" src="https://static.oneplay.com/materials/images/languages/nl/6_thumbnail_1.png" title="Nederlands"/> nl</a></li>
+<li><a href="/en/language/7/return/no/download/categories/platform/android" title="Norwegian"><img alt="Norwegian" src="https://static.oneplay.com/materials/images/languages/no/7_thumbnail_1.jpg" title="Norwegian"/> no</a></li>
+<li><a href="/en/language/9/return/de/download/categories/platform/android" title="Deutsch"><img alt="Deutsch" src="https://static.oneplay.com/materials/images/languages/de/9_thumbnail_1.jpg" title="Deutsch"/> de</a></li>
+<li><a href="/en/language/13/return/uk/download/categories/platform/android" title="British English"><img alt="British English" src="https://static.oneplay.com/materials/images/languages/uk/13_thumbnail_1.jpg" title="British English"/> uk</a></li>
+<li><a href="/en/language/14/return/au/download/categories/platform/android" title="Australian English"><img alt="Australian English" src="https://static.oneplay.com/materials/images/languages/au/14_thumbnail_1.png" title="Australian English"/> au</a></li>
+</ul>
+</div><!-- .language_menu-->
+</div>
+<div class="login-link" id="login_link_container">
+<a href="javascript:void(0);">My account</a>
+<div id="login_menu_container">
+<div class="submit_button wrapper_button">
+<a class="login_btn" href="/en/login">Login</a> </div>
+<div class="wrapper_button">
+<a class="facebook_btn" href="/en/login" title="LOGIN WITH FACEBOOK">Login with facebook</a> </div>
+<a class="notyetmember_btn" href="/en/signup" title="NOT YEA A MEMBER?">Not a member?</a>
+<div class="signup_promo">
+                Join now and get 10% discount on all games!            </div>
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#login_link_container")
+            .mouseover(function() {
+                $('#login_menu_container').show();
+            })
+            .mouseout(function() {
+                var focused = $('#login_menu_container').find("input").is(":focus");
+                if(!focused){
+                    $('#login_menu_container').hide();
+                }
+            });
+    });
+</script>
+<div class="cart"><span class="icon"></span><a href="javascript:void(0)" id="cart-link">Cart <span id="buy_basket_count">0</span></a>
+<div id="cart_container"></div>
+<script type="text/javascript">$("#cart-link").click(function(){toggleCart("/en/content/getCartContent");});</script> </div>
+</div>
+</div>
+</div>
+</div>
+<div class="subactive" id="main_menu">
+<div class="layout">
+<a class="logo" href="http://www.oneplay.com" style="padding-top: 10px;" title="OnePlay"><img alt="Oneplay" src="https://static.oneplay.com/materials/settings/48/48_original_21.jpg"/></a>
+<div class="nav">
+<div class="navi-section categories-navi">
+<ul class="menu">
+<li class="left_side_menu_item buy-tab active ">
+<a class="link_hover " href="http://www.oneplay.com/en/download">
+<span>Buy Games</span>Low Prices                       </a>
+<div class="submenu1 submenu">
+<div class="gallery-content">
+<ul class="menu">
+<li class="platform-pc-download" data-platform="platform-pc-download">
+<a data-link="http://www.oneplay.com/en/download/categories/platform/pc" href="#platform-pc-download">
+<img alt="" class="platform-image" src="https://static.oneplay.com/materials/images/platforms/pc/8_thumbnail_1.png"/><br/>
+<span class="arrow"></span> </a>
+</li>
+<li class="platform-android-download" data-platform="platform-android-download">
+<a data-link="http://www.oneplay.com/en/download/categories/platform/android" href="#platform-android-download">
+<img alt="" class="platform-image" src="https://static.oneplay.com/materials/images/platforms/android/12_thumbnail_1.png"/><br/>
+<span class="arrow"></span> </a>
+</li>
+<li class="platform-mac-download" data-platform="platform-mac-download">
+<a data-link="http://www.oneplay.com/en/download/categories/platform/mac" href="#platform-mac-download">
+<img alt="" class="platform-image" src="https://static.oneplay.com/materials/images/platforms/Mac/11_thumbnail_1.png"/><br/>
+<span class="arrow"></span> </a>
+</li>
+</ul>
+</div>
+<!--<div class="page_nav">
+                                  <a class="nav_prev" href="#">Prev</a>
+                                  <a class="nav_next" href="#">Next</a>
+                              </div>-->
+</div>
+</li>
+<li class="left_side_menu_item rent-tab ">
+<a class="link_hover " href="http://www.oneplay.com/en/howitworks">
+<span>Become</span>VIP Member                       </a>
+</li>
+</ul>
+<div class="submenu2">
+<div class="pane" data-platform="platform-pc-download" id="platform-pc-download">
+<div class="layout">
+<ul class="menu">
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/action%252Fadventure/platform/pc">
+                                                                  Action                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/shooter/platform/pc">
+                                                                  Shooter (FPS)                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/role-playing/platform/pc">
+                                                                  Role-playing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/fighting/platform/pc">
+                                                                  Fighting                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/arcade/platform/pc">
+                                                                  Arcade                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/kids/platform/pc">
+                                                                  Kids                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/racing/platform/pc">
+                                                                  Racing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/sport/platform/pc">
+                                                                  Sport                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/mmo/platform/pc">
+                                                                  MMO                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/indie%2Bgames/platform/pc">
+                                                                  Indie Games                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/simulation/platform/pc">
+                                                                  Simulation                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/strategy/platform/pc">
+                                                                  Strategy                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/platform/platform/pc">
+                                                                  Platform                                                                </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="pane" data-platform="platform-android-download" id="platform-android-download">
+<div class="layout">
+<ul class="menu">
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/action%252Fadventure/platform/android">
+                                                                  Action                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/shooter/platform/android">
+                                                                  Shooter (FPS)                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/role-playing/platform/android">
+                                                                  Role-playing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/platform/platform/android">
+                                                                  Platform                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/arcade/platform/android">
+                                                                  Arcade                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/kids/platform/android">
+                                                                  Kids                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/racing/platform/android">
+                                                                  Racing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/sport/platform/android">
+                                                                  Sport                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/fighting/platform/android">
+                                                                  Fighting                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/indie%2Bgames/platform/android">
+                                                                  Indie Games                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/simulation/platform/android">
+                                                                  Simulation                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/strategy/platform/android">
+                                                                  Strategy                                                                </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="pane" data-platform="platform-mac-download" id="platform-mac-download">
+<div class="layout">
+<ul class="menu">
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/action%252Fadventure/platform/mac">
+                                                                  Action                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/shooter/platform/mac">
+                                                                  Shooter (FPS)                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/role-playing/platform/mac">
+                                                                  Role-playing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/platform/platform/mac">
+                                                                  Platform                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/mmo/platform/mac">
+                                                                  MMO                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/kids/platform/mac">
+                                                                  Kids                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/racing/platform/mac">
+                                                                  Racing                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/sport/platform/mac">
+                                                                  Sport                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/fighting/platform/mac">
+                                                                  Fighting                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/arcade/platform/mac">
+                                                                  Arcade                                                                </a>
+</li>
+<li class="cell ">
+<a href="http://www.oneplay.com/en/download/genre/name/simulation/platform/mac">
+                                                                  Simulation                                                                </a>
+</li>
+<li class="cell last">
+<a href="http://www.oneplay.com/en/download/genre/name/strategy/platform/mac">
+                                                                  Strategy                                                                </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="navi-section sections-navi">
+<ul class="menu">
+<li class="left_side_menu_item deals-tab ">
+<a class="my_deals " href="http://www.oneplay.com/en/deals">
+                      Deals                   </a>
+</li>
+<li class="left_side_menu_item collections-tab ">
+<a class="my_collections " href="http://www.oneplay.com/en/collections">
+                      Collections                   </a>
+</li>
+<li class="left_side_menu_item top-sellers-tab ">
+<a class="my_collections " href="/en/topSellers">
+                      Top sellers                   </a>
+</li>
+</ul>
+</div>
+</div>
+<div class="search">
+<span class="search-icon" id="search-icon">Search Here</span>
+<div class="search-hidden">
+<form accept-charset="UTF-8" action="/en/content/smartsearch" enctype="multipart/form-data" id="searchForm" method="post" name="global_search_form"> <input autocomplete="off" class="as-input ac_input" id="global_keyword" maxlength="255" name="SearchForm[keyword]" onblur="javascript: blurInspection(this, 'Search');" onfocus="javascript: focusInspection(this, 'Search');" type="text" value="Search"/> <select id="SearchForm_platform_id" name="SearchForm[platform_id]">
+<option value="">All</option>
+<option value="8">PC</option>
+<option value="12">Android</option>
+<option value="1">PS3</option>
+<option value="11">Mac</option>
+</select>
+<a class="search_btn" href="#" onclick='$("#searchForm").submit(); return false;'>Search</a> <span class="delete-btn"></span>
+</form> </div>
+<script type="text/javascript">
+$( document ).ready(function() {   
+    init_autocomplete("/en/download/autocomplete");
+});
+</script> </div>
+</div>
+</div>
+<style>
+#main_menu .left_side_menu_item.hovered > a{background: #79B539 !important; border-top: 2px solid #79B539 !important;}
+#main_menu .submenu2 .pane.hovered{display: block !important;}
+.gallery-content ul{z-index: 5;}
+</style> <div id="content">
+<div class="content-box">
+<div class="breadcrumbs_bg">
+<div class="layout" id="layout_element">
+<div class="breadcrumbs">
+<a href="/en">Home</a> » <a href="/en">Buy Games</a> » <span>Android</span></div> </div>
+</div>
+<div class="page-blackout other-page browse-page">
+<div class="layout">
+<form accept-charset="UTF-8" action="/en/download/categories/platform/android" enctype="multipart/form-data" id="filterForm" method="post" name="filterForm">
+<div class="form_line form_select_sellers">
+<div class="form_block">
+<label>GENRE</label>
+<select class="formfields" id="CategoryFilterForm_category_definition" name="CategoryFilterForm[category_definition]">
+<option value="">Any category</option>
+<option value="1_ItemGenre">Action</option>
+<option value="2_ItemGenre">Kids</option>
+<option value="4_ItemGenre">Simulation</option>
+<option value="5_ItemGenre">Shooter (FPS)</option>
+<option value="6_ItemGenre">Racing</option>
+<option value="7_ItemGenre">Strategy</option>
+<option value="8_ItemGenre">Role-playing</option>
+<option value="9_ItemGenre">Sport</option>
+<option value="11_ItemGenre">Platform</option>
+<option value="12_ItemGenre">Fighting</option>
+<option value="21_ItemGenre">MMO</option>
+<option value="23_ItemGenre">Arcade</option>
+<option value="26_ItemGenre">Indie Games</option>
+<option value="36_ItemGenre">Education</option>
+<option value="37_ItemGenre">eGuide</option>
+<option value="39_ItemGenre">Puzzle</option>
+<option value="40_ItemGenre">Flight</option>
+<option value="41_ItemGenre">Horror</option>
+<option value="42_ItemGenre">Story Telling</option>
+<option value="43_ItemGenre">Casual</option>
+<option value="44_ItemGenre">Adventure</option>
+<option value="45_ItemGenre">Hidden Object</option>
+<option value="46_ItemGenre">Point and Click</option>
+<option value="47_ItemGenre">Card Game</option>
+<option value="48_ItemGenre">Virtual Reality</option>
+<option value="49_ItemGenre">Gift Certificate</option>
+<option value="1_QuickFilter">New releases</option>
+<option value="2_QuickFilter">Coming soon</option>
+<option value="3_QuickFilter">Most rented</option>
+<option value="8_QuickFilter">Least popular</option>
+<option value="23_QuickFilter">All games</option>
+<option value="42_QuickFilter">Bestseller</option>
+</select> </div>
+<div class="form_block">
+<label>PRICE RANGE</label>
+<select class="formfields" id="CategoryFilterForm_price_range_filter_id" name="CategoryFilterForm[price_range_filter_id]">
+<option value="">Any price</option>
+<option value="11">From $ 10 to 20</option>
+<option value="16">Below $ 40</option>
+<option value="18">Below $ 5</option>
+<option value="19">Below $ 10</option>
+</select> </div>
+<div class="form_block">
+<label>USER RATING</label>
+<select class="formfields" id="CategoryFilterForm_user_rating_filter_id" name="CategoryFilterForm[user_rating_filter_id]">
+<option value="">All rating</option>
+<option value="36">1</option>
+<option value="37">2</option>
+<option value="38">3</option>
+<option value="39">4</option>
+<option value="40">5</option>
+<option value="41">Not rated</option>
+</select> </div>
+<div class="form_block">
+<label>AGE RATING</label>
+<select class="formfields" id="CategoryFilterForm_age_rating_filter_id" name="CategoryFilterForm[age_rating_filter_id]">
+<option value="">All rating</option>
+<option value="28">3+</option>
+<option value="29">7+</option>
+<option value="30">12+</option>
+<option value="31">16+</option>
+<option value="32">18+</option>
+<option value="33">Pending</option>
+</select> </div>
+<div class="form_block">
+<label>RELEASE DATE</label>
+<select class="formfields" id="CategoryFilterForm_release_date_filter_name" name="CategoryFilterForm[release_date_filter_name]">
+<option value="">Any date</option>
+<option value="comingsoon">Coming soon</option>
+<option value="released">Released</option>
+</select> </div>
+</div>
+<a class="clear_btn" href="/en/download/clearAllFilters/platform/android">Clear All</a> </form>
+<div class="page_layout">
+<div class="list-view" id="yw0">
+<h3 class="layout-title">Android </h3>
+<div class="search-block">
+Sort by<select id="sortVariant" name="sortVariant" onchange="onChangeListViewDropdownSort(this, 'yw0')">
+<option rel="/en/download/categories/platform/android/sort/" value="0">Select...</option>
+<option rel="/en/download/categories/platform/android/sort/price_low_to_high" value="price_low_to_high">Price: Low to high</option>
+<option rel="/en/download/categories/platform/android/sort/price_high_to_low" value="price_high_to_low">Price: High to low</option>
+<option rel="/en/download/categories/platform/android/sort/newest_first" value="newest_first">Newest first</option>
+<option rel="/en/download/categories/platform/android/sort/oldest_first" value="oldest_first">Oldest first</option>
+<option rel="/en/download/categories/platform/android/sort/best_rated_first" value="best_rated_first">Best rated first</option>
+<option rel="/en/download/categories/platform/android/sort/bestsellers_first" value="bestsellers_first">Bestsellers first</option>
+</select></div>
+<div class="items">
+<div>
+<a class="img_block" href="/en/download/details/11202_Pop_Animal">
+<div class="android-game">Android game</div> <img alt="Pop Animal" src="https://static.oneplay.com/materials/items/1/11202/190x270.jpg"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11202_Pop_Animal">
+<p class="title-game">Pop Animal</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<a href="/en/buyBasket/addItem/itemId/11202/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11202/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11242_3D_Archery_2">
+<div class="android-game">Android game</div> <img alt="3D Archery 2" src="https://static.oneplay.com/materials/items/1/11242/190x270.jpg"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11242_3D_Archery_2">
+<p class="title-game">3D Archery 2</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11242/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11242/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11244_The_Dog_Avengers">
+<div class="android-game">Android game</div> <img alt="The Dog Avengers" src="https://static.oneplay.com/materials/items/1/11244/190x270.png"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11244_The_Dog_Avengers">
+<p class="title-game">The Dog Avengers</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11244/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11244/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11246_Big_Big_Bang">
+<div class="android-game">Android game</div> <img alt="Big Big Bang" src="https://static.oneplay.com/materials/items/1/11246/190x270.jpg"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11246_Big_Big_Bang">
+<p class="title-game">Big Big Bang</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/download/details/11246_Big_Big_Bang">
+	    		Order	    	</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11246/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11247_Biliards">
+<div class="android-game">Android game</div> <img alt="Biliards" src="https://static.oneplay.com/materials/items/1/11247/190x270.png"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11247_Biliards">
+<p class="title-game">Biliards</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 9.99                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11247/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11247/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11251_Doodle_Fly">
+<div class="android-game">Android game</div> <img alt="Doodle Fly" src="https://static.oneplay.com/materials/items/1/11251/190x270.png"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11251_Doodle_Fly">
+<p class="title-game">Doodle Fly</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11251/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11251/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11252_Block_Breaker_Deluxe">
+<div class="android-game">Android game</div> <img alt="Block Breaker Deluxe" src="https://static.oneplay.com/materials/items/1/11252/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11252_Block_Breaker_Deluxe">
+<p class="title-game">Block Breaker Deluxe</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11252/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11252/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11254_Dead_Rising">
+<div class="android-game">Android game</div> <img alt="Dead Rising" src="https://static.oneplay.com/materials/items/1/11254/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11254_Dead_Rising">
+<p class="title-game">Dead Rising</p>
+<img alt="5" src="/images/voting/star_display_5.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11254/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11254/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11255_Action_Bowling">
+<div class="android-game">Android game</div> <img alt="Action Bowling" src="https://static.oneplay.com/materials/items/1/11255/190x270.png"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11255_Action_Bowling">
+<p class="title-game">Action Bowling</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11255/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11255/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11256_Batminton_League">
+<div class="android-game">Android game</div> <img alt="Batminton League" src="https://static.oneplay.com/materials/items/1/11256/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11256_Batminton_League">
+<p class="title-game">Batminton League</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11256/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11256/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11258_Battleships">
+<div class="android-game">Android game</div> <img alt="Battleships" src="https://static.oneplay.com/materials/items/1/11258/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11258_Battleships">
+<p class="title-game">Battleships</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11258/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11258/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11259_Bike_Rider">
+<div class="android-game">Android game</div> <img alt="Bike Rider" src="https://static.oneplay.com/materials/items/1/11259/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11259_Bike_Rider">
+<p class="title-game">Bike Rider</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11259/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11259/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11260_Boxing_Storm">
+<div class="android-game">Android game</div> <img alt="Boxing Storm" src="https://static.oneplay.com/materials/items/1/11260/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11260_Boxing_Storm">
+<p class="title-game">Boxing Storm</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11260/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11260/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11262_Dumpster_at_the_sea">
+<div class="android-game">Android game</div> <img alt="Dumpster at the sea" src="https://static.oneplay.com/materials/items/1/11262/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11262_Dumpster_at_the_sea">
+<p class="title-game">Dumpster at the sea</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11262/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11262/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11266_Table_Tennis_League_3D">
+<div class="android-game">Android game</div> <img alt="Table Tennis League 3D" src="https://static.oneplay.com/materials/items/1/11266/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11266_Table_Tennis_League_3D">
+<p class="title-game">Table Tennis League 3D</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11266/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11266/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11287_Last_Defense_Of_Our_time">
+<div class="android-game">Android game</div> <img alt="Last Defense Of Our time" src="https://static.oneplay.com/materials/items/1/11287/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11287_Last_Defense_Of_Our_time">
+<p class="title-game">Last Defense Of Our time</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11287/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11287/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11288_Squibble_The_word_game">
+<div class="android-game">Android game</div> <img alt="Squibble The word game" src="https://static.oneplay.com/materials/items/1/11288/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11288_Squibble_The_word_game">
+<p class="title-game">Squibble The word game</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11288/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11288/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11293_Miniklub">
+<div class="android-game">Android game</div> <img alt="Miniklub" src="https://static.oneplay.com/materials/items/1/11293/190x270.jpg"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11293_Miniklub">
+<p class="title-game">Miniklub</p>
+<img alt="5" src="/images/voting/star_display_5.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 9.99                                        </span></p>
+</div>
+<div class="btn-item">
+<a href="/en/buyBasket/addItem/itemId/11293/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11293/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11297_Sudoku_of_Mana">
+<div class="android-game">Android game</div> <img alt="Sudoku of Mana" src="https://static.oneplay.com/materials/items/1/11297/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11297_Sudoku_of_Mana">
+<p class="title-game">Sudoku of Mana</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11297/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11297/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11301_Heavy_Fire_Afghanistan">
+<div class="android-game">Android game</div> <img alt="Heavy Fire Afghanistan" src="https://static.oneplay.com/materials/items/1/11301/190x270.png"/>
+<span class="saved_proc">80%</span>
+</a>
+<a class="note-block" href="/en/download/details/11301_Heavy_Fire_Afghanistan">
+<p class="title-game">Heavy Fire Afghanistan</p>
+<img alt="5" src="/images/voting/star_display_5.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 1.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<a href="/en/buyBasket/addItem/itemId/11301/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11301/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11302_My_First_Trainz_Set">
+<div class="android-game">Android game</div> <img alt="My First Trainz Set" src="https://static.oneplay.com/materials/items/1/11302/190x270.png"/>
+<span class="saved_proc">50%</span>
+</a>
+<a class="note-block" href="/en/download/details/11302_My_First_Trainz_Set">
+<p class="title-game">My First Trainz Set</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11302/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11302/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11304_Trainz_Simulator">
+<div class="android-game">Android game</div> <img alt="Trainz Simulator" src="https://static.oneplay.com/materials/items/1/11304/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11304_Trainz_Simulator">
+<p class="title-game">Trainz Simulator</p>
+<img alt="5" src="/images/voting/star_display_5.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 10.00                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11304/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11304/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11305_Trainz_Trouble">
+<div class="android-game">Android game</div> <img alt="Trainz Trouble" src="https://static.oneplay.com/materials/items/1/11305/190x270.png"/>
+</a>
+<a class="note-block" href="/en/download/details/11305_Trainz_Trouble">
+<p class="title-game">Trainz Trouble</p>
+<img alt="4" src="/images/voting/star_display_4.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+</span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11305/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11305/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11308_Dojo_Madness">
+<div class="android-game">Android game</div> <img alt="Dojo Madness" src="https://static.oneplay.com/materials/items/1/11308/190x270.png"/>
+<span class="saved_proc">92%</span>
+</a>
+<a class="note-block" href="/en/download/details/11308_Dojo_Madness">
+<p class="title-game">Dojo Madness</p>
+<img alt="5" src="/images/voting/star_display_5.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 4.99                </p>
+<p class="save"><span>
+                                                    $ 59.99                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11308/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11308/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div>
+<div>
+<a class="img_block" href="/en/download/details/11362_Crazy_Fruit">
+<div class="android-game">Android game</div> <img alt="Crazy Fruit" src="https://static.oneplay.com/materials/items/1/11362/190x270.png"/>
+<span class="saved_proc">90%</span>
+</a>
+<a class="note-block" href="/en/download/details/11362_Crazy_Fruit">
+<p class="title-game">Crazy Fruit</p>
+<img alt="3" src="/images/voting/star_display_3.png"/>
+</a>
+<div class="price-block">
+<p class="price">
+                    $ 0.99                </p>
+<p class="save"><span>
+                                                    $ 9.99                                        </span></p>
+</div>
+<div class="btn-item">
+<img alt="" src="https://static.oneplay.com/materials/images/item_icons/1_small_.png"/> <a href="/en/buyBasket/addItem/itemId/11362/condition/download">Buy</a>
+</div>
+<div class="rent-btn">
+<a href="/en/browse/showRentDialog/itemId/11362/return/en/download/categories/platform/android" onclick="showLoginForm(); return false;" style="display:inline;">
+<img alt="OnePlay" src="https://static.oneplay.com/materials/translation_images/en/buttons/rent_small.gif"/> </a>
+</div>
+</div></div><div class="pager">
+<ul class="yiiPager" id="">
+<li class="first hidden"><a href="/en/download/categories/platform/android"></a></li>
+<li class="previous hidden"><a href="/en/download/categories/platform/android">Previous</a></li>
+<li class="page selected"><a href="/en/download/categories/platform/android">1</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/2">2</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/3">3</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/4">4</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/5">5</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/6">6</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/7">7</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/8">8</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/9">9</a></li>
+<li class="page"><a href="/en/download/categories/platform/android/Item_page/10">10</a></li>
+<li class="next"><a href="/en/download/categories/platform/android/Item_page/2">Next</a></li>
+<li class="last"><a href="/en/download/categories/platform/android/Item_page/27"></a></li>
+</ul>
+</div><div class="keys" style="display:none" title="/en/download/categories/platform/android"><span>11202</span><span>11242</span><span>11244</span><span>11246</span><span>11247</span><span>11251</span><span>11252</span><span>11254</span><span>11255</span><span>11256</span><span>11258</span><span>11259</span><span>11260</span><span>11262</span><span>11266</span><span>11287</span><span>11288</span><span>11293</span><span>11297</span><span>11301</span><span>11302</span><span>11304</span><span>11305</span><span>11308</span><span>11362</span></div>
+</div> </div>
+</div>
+</div>
+<div id="popup" style="display:none">
+<div class="popup_box">
+<div class="popup_tbg">
+<div class="popup_bbg">
+<div class="popup_cbg" style="background: none repeat scroll 0 0 #FFFFFF;">
+<div class="simplemodal-container">
+<a class="simplemodal-close close_button" href="#" title="Close">Close window</a>
+<div id="popup_inner">
+<img alt="" src="/images/nyroModal/ajaxLoader.gif"/>
+<!-- On this place content will be shown-->
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div id="root_footer"></div>
+</div>
+<div id="footer">
+<div class="mobile_app" style="background: url(https://static.oneplay.com/materials/translation_images/en/oneplay_mobile_app.jpg);"><div class="layout"><a href="/OnePlay_App">Download</a></div></div>
+<div id="footer">
+<div class="layout">
+<div class="bottom_menu">
+<div>
+<ul>
+<li class="title">Main menu</li>
+<li><a href="/en/my_account">My account</a></li>
+<li><a href="/en/faq">FAQs</a></li>
+<li><a href="/en/contact_us">Contact us</a></li>
+<li><a href="/en/news">News</a></li>
+<li><a href="/en/testimonials">Testimonials</a></li>
+<li><a href="/en/howitworks">How it works</a></li>
+<li><a href="/en/about_us">About Us</a></li>
+<li><a href="/en/terms">Terms of Use</a></li>
+<li><a href="/en/privacy_policy">Privacy Policy</a></li>
+<li><a href="/en/GameSupport">Game Support</a></li>
+<li><a href="/en/OnePlay_App">OnePlay App FREE on Your Android Device!</a></li>
+<li><a href="/en/COPPA">COPPA</a></li>
+<li><a href="/en/EULA">EULA</a></li>
+<li><a href="/en/jobs">Jobs</a></li>
+<li><a href="/en/BusinessContact">Business contact</a></li>
+</ul>
+<ul>
+<li class="title">PC</li>
+<li><a href="/en/download/genre/name/action%252Fadventure/platform/pc">Action</a></li>
+<li><a href="/en/download/genre/name/kids/platform/pc">Kids</a></li>
+<li><a href="/en/download/genre/name/simulation/platform/pc">Simulation</a></li>
+<li><a href="/en/download/genre/name/shooter/platform/pc">Shooter (FPS)</a></li>
+<li><a href="/en/download/genre/name/racing/platform/pc">Racing</a></li>
+<li><a href="/en/download/genre/name/strategy/platform/pc">Strategy</a></li>
+<li><a href="/en/download/genre/name/role-playing/platform/pc">Role-playing</a></li>
+<li><a href="/en/download/genre/name/sport/platform/pc">Sport</a></li>
+<li><a href="/en/download/genre/name/platform/platform/pc">Platform</a></li>
+<li><a href="/en/download/genre/name/fighting/platform/pc">Fighting</a></li>
+<li><a href="/en/download/genre/name/mmo/platform/pc">MMO</a></li>
+<li><a href="/en/download/genre/name/arcade/platform/pc">Arcade</a></li>
+<li><a href="/en/download/genre/name/indie%2Bgames/platform/pc">Indie Games</a></li>
+</ul>
+<ul>
+<li class="title">Android</li>
+<li><a href="/en/download/genre/name/action%252Fadventure/platform/android">Action</a></li>
+<li><a href="/en/download/genre/name/kids/platform/android">Kids</a></li>
+<li><a href="/en/download/genre/name/simulation/platform/android">Simulation</a></li>
+<li><a href="/en/download/genre/name/shooter/platform/android">Shooter (FPS)</a></li>
+<li><a href="/en/download/genre/name/racing/platform/android">Racing</a></li>
+<li><a href="/en/download/genre/name/strategy/platform/android">Strategy</a></li>
+<li><a href="/en/download/genre/name/role-playing/platform/android">Role-playing</a></li>
+<li><a href="/en/download/genre/name/sport/platform/android">Sport</a></li>
+<li><a href="/en/download/genre/name/platform/platform/android">Platform</a></li>
+<li><a href="/en/download/genre/name/fighting/platform/android">Fighting</a></li>
+<li><a href="/en/download/genre/name/arcade/platform/android">Arcade</a></li>
+<li><a href="/en/download/genre/name/indie%2Bgames/platform/android">Indie Games</a></li>
+</ul>
+<ul>
+<li class="title">MAC</li>
+<li><a href="/en/download/genre/name/action%252Fadventure/platform/mac">Action</a></li>
+<li><a href="/en/download/genre/name/kids/platform/mac">Kids</a></li>
+<li><a href="/en/download/genre/name/simulation/platform/mac">Simulation</a></li>
+<li><a href="/en/download/genre/name/shooter/platform/mac">Shooter (FPS)</a></li>
+<li><a href="/en/download/genre/name/racing/platform/mac">Racing</a></li>
+<li><a href="/en/download/genre/name/strategy/platform/mac">Strategy</a></li>
+<li><a href="/en/download/genre/name/role-playing/platform/mac">Role-playing</a></li>
+<li><a href="/en/download/genre/name/sport/platform/mac">Sport</a></li>
+<li><a href="/en/download/genre/name/platform/platform/mac">Platform</a></li>
+<li><a href="/en/download/genre/name/fighting/platform/mac">Fighting</a></li>
+<li><a href="/en/download/genre/name/mmo/platform/mac">MMO</a></li>
+<li><a href="/en/download/genre/name/arcade/platform/mac">Arcade</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="social_links">
+<div class="layout">
+<div class="like-box-top">
+<ul>
+<li class="fb">
+<div class="fb-like-us">Like us</div>
+<iframe allowtransparency="true" class="fslike_btn" frameborder="0" scrolling="no" src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FOneplaycom&amp;locale=en_US&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;font=tahoma&amp;colorscheme=light&amp;action=like&amp;height=20" style="border:none; overflow:hidden; width:48px; height:20px;"></iframe>
+</li>
+<li class="tw">
+<div class="tw-follow">Follow us</div>
+<a class="twitter-share-button" data-count="none" href="https://twitter.com/share">Tweet 2</a>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</li>
+<li class="gplus">
+<div class="gplus-join">Join us</div>
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-annotation="none" data-href="/en/download/categories/platform/android" data-size="medium"></div>
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+                (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                })();
+            </script>
+</li>
+</ul>
+</div>
+<div class="trustpilot">
+<a href="http://www.trustpilot.com/review/oneplay.com" target="_blank"><img alt="TrustPilot" class="trustpilot_footer" src="https://static.oneplay.com/materials/settings/46/46_original_1.png"/></a> 
+                                <!--
+                <div class="tp_-_box" data-tp-settings="domainId:1166963,fontSize:10,fontFamily:Arial,fontColor:ffffff,bgColor:303030,borderRadius:25,borderWidth:0,showReviews:False,showRatingText:False,showUserImage:False,usePopup:False,width:135,numOfReviews:1,useDynamicHeight:False,height:85">
+                    <a href="http://www.trustpilot.dk/review/oneplay.com" rel="nofollow" hidden>OnePlay.com Anmeldelser</a>
+                </div>
+
+                -->
+</div>
+<div class="geo_trust">
+<!-- GeoTrust Smart Icon tag. Do not edit. -->
+<script language="javascript" src="//smarticon.geotrust.com/si.js" type="text/javascript"></script>
+<!-- end GeoTrust Smart Icon tag --> </div>
+</div>
+</div>
+<div class="layout copyright_layout">
+<a class="logo" href="http://www.oneplay.com" title="OnePlay"><img alt="Oneplay" src="https://static.oneplay.com/materials/settings/49/49_original_1.png"/></a>
+<p class="copy">© 2018 OnePlay All rights reserved. <br/>Powered and supported by <a href="http://quartsoft.com/case-studies" target="_blank">QuartSoft</a>.</p>
+<div class="bottom_lang"><span>Choose your language</span> <div class="language_menu">
+<a class="language_select" href="javascript:void(0);"><img alt="" src="https://static.oneplay.com/materials/images/languages/en/1_thumbnail_1.jpg"/> en </a>
+<ul style="z-index: 2000; display: none;">
+<li><a href="/en/language/1/return/en/download/categories/platform/android" title="American English"><img alt="American English" src="https://static.oneplay.com/materials/images/languages/en/1_thumbnail_1.jpg" title="American English"/> en</a></li>
+<li><a href="/en/language/2/return/dk/download/categories/platform/android" title="Dansk"><img alt="Dansk" src="https://static.oneplay.com/materials/images/languages/dk/2_thumbnail_1.png" title="Dansk"/> dk</a></li>
+<li><a href="/en/language/4/return/se/download/categories/platform/android" title="Swedish"><img alt="Swedish" src="https://static.oneplay.com/materials/images/languages/se/4_thumbnail_1.jpg" title="Swedish"/> se</a></li>
+<li><a href="/en/language/6/return/nl/download/categories/platform/android" title="Nederlands"><img alt="Nederlands" src="https://static.oneplay.com/materials/images/languages/nl/6_thumbnail_1.png" title="Nederlands"/> nl</a></li>
+<li><a href="/en/language/7/return/no/download/categories/platform/android" title="Norwegian"><img alt="Norwegian" src="https://static.oneplay.com/materials/images/languages/no/7_thumbnail_1.jpg" title="Norwegian"/> no</a></li>
+<li><a href="/en/language/9/return/de/download/categories/platform/android" title="Deutsch"><img alt="Deutsch" src="https://static.oneplay.com/materials/images/languages/de/9_thumbnail_1.jpg" title="Deutsch"/> de</a></li>
+<li><a href="/en/language/13/return/uk/download/categories/platform/android" title="British English"><img alt="British English" src="https://static.oneplay.com/materials/images/languages/uk/13_thumbnail_1.jpg" title="British English"/> uk</a></li>
+<li><a href="/en/language/14/return/au/download/categories/platform/android" title="Australian English"><img alt="Australian English" src="https://static.oneplay.com/materials/images/languages/au/14_thumbnail_1.png" title="Australian English"/> au</a></li>
+</ul>
+</div><!-- .language_menu-->
+</div>
+</div>
+</div>
+<div class="live_chat"><!-- Start of oneplay Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(e){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","oneplay.zendesk.com");
+/*]]>*/</script>
+<!-- End of oneplay Zendesk Widget script --></div>
+<!--crazyegg analytics-->
+<script type="text/javascript">
+setTimeout(function(){var e=document.createElement("script"),t=document.getElementsByTagName("script")[0];e.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0020/9314.js?"+Math.floor((new Date).getTime()/36e5),e.async=!0,e.type="text/javascript",t.parentNode.insertBefore(e,t)},1);
+</script>
+<!--end crazyegg analytics-->
+<!-- Google Code for Remarketingtag -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id=1016510756,google_conversion_label="6GV3CLy64AMQpPLa5AM",google_custom_params=window.google_tag_params,google_remarketing_only=!0;
+/* ]]> */
+</script>
+<script src="//www.googleadservices.com/pagead/conversion.js" type="text/javascript"></script>
+<noscript><div style="display:inline;"><img alt="" height="1" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1016510756/?value=0&amp;label=6GV3CLy64AMQpPLa5AM&amp;guid=ON&amp;script=0" style="border-style:none;" width="1"/></div></noscript>
+<script async="" src="//config1.veinteractive.com/tags/596FDE89/68D2/404B/BC2F/A5EDADEA210E/tag.js" type="text/javascript"></script>
+<script>!function(e,a,n,t,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=a.createElement(n),s=a.getElementsByTagName(n)[0],o.async=1,o.src=t,s.parentNode.insertBefore(o,s)}(window,document,"script","//www.google-analytics.com/analytics.js","ga"),ga("create","UA-8101595-1","oneplay.com"),ga("send","pageview");
+</script>
+<script type="text/javascript">!function(e,t){if("#gleam"==window.location.hash||!(""+document.cookie).match(/(^|;)\s*GleamcZsS2=X($|;)/)){var o=e.createElement(t),a=e.getElementsByTagName(t)[0];o.src="https://js.gleam.io/cZsS2/ol.js",a.parentNode.insertBefore(o,a)}}(document,"script");</script>
+<script>!function(){var e=window._fbq||(window._fbq=[]);if(!e.loaded){var n=document.createElement("script");n.async=!0,n.src="//connect.facebook.net/en_US/fbds.js";var d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(n,d),e.loaded=!0}e.push(["addPixelId","838190476261908"])}(),window._fbq=window._fbq||[],window._fbq.push(["track","PixelInitialized",{}]);</script>
+<noscript><img alt="" height="1" src="https://www.facebook.com/tr?id=838190476261908&amp;ev=PixelInitialized" style="display:none" width="1"/></noscript>
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('l5xb6', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript><img alt="" height="1" src="https://analytics.twitter.com/i/adsct?txn_id=l5xb6&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" style="display:none;" width="1"/><img alt="" height="1" src="//t.co/i/adsct?txn_id=l5xb6&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" style="display:none;" width="1"/></noscript>
+<script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">twttr.conversion.trackPid('l5xb7', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
+<noscript><img alt="" height="1" src="https://analytics.twitter.com/i/adsct?txn_id=l5xb7&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" style="display:none;" width="1"/><img alt="" height="1" src="//t.co/i/adsct?txn_id=l5xb7&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" style="display:none;" width="1"/></noscript>
+<script async="async" src="https://js.gleam.io/oi-ULaNg9v.js"></script>
+<script type="text/javascript">
+var pixelSRCType = (("https:" == document.location.protocol) ? "https://" : "http://");
+var cId = 'a588de15-8593-44d6-b1c7-fe765aceecb3';
+var tName = 'visit';
+var pId = ''; // Insert comma-separated string of product ID/IDs (Only on product pages)
+var revenue = '';
+var orderId = '';
+var p1 = '';
+var p2 = '';
+var p3 = '';
+document.write("<iframe src='" + pixelSRCType + "adserver.adnexio.com/Tracking/EventHandler?cId="+cId+"&tName="+tName+"&pId="+pId+"&revenue="+revenue+"&orderId="+orderId+"&p1="+p1+"&p2="+p2+"&p3="+p3+"' allowtransparency='true' framespacing='0' frameborder='no' scrolling='no' width='0' height='0'></iframe>");
+</script>
+<script type="text/javascript">
+var pixelSRCType = (("https:" == document.location.protocol) ? "https://" : "http://");
+var cId = '306c688d-a945-444e-a99a-eb517ffd75ea';
+var tName = 'visit';
+var pId = ''; // Insert comma-separated string of product ID/IDs (Only on product pages)
+var revenue = '';
+var orderId = '';
+var p1 = '';
+var p2 = '';
+var p3 = '';
+document.write("<iframe src='" + pixelSRCType + "adserver.adnexio.com/Tracking/EventHandler?cId="+cId+"&tName="+tName+"&pId="+pId+"&revenue="+revenue+"&orderId="+orderId+"&p1="+p1+"&p2="+p2+"&p3="+p3+"' allowtransparency='true' framespacing='0' frameborder='no' scrolling='no' width='0' height='0'></iframe>");
+</script>
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-8101595-1");pageTracker._setDomainName("none");pageTracker._setAllowLinker(true);pageTracker._trackPageview();} catch(err){}</script>
+</div>
+<script src="/js/index/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/index/browse_categories.js" type="text/javascript"></script>
+<script src="/assets/11d4c763/listview/jquery.yiilistview.js" type="text/javascript"></script>
+<script src="/js/index/jquery.simplemodal.1.4.3.min.js" type="text/javascript"></script>
+<script src="/js/index/items.js" type="text/javascript"></script>
+<script src="/js/index/languages_menu.js" type="text/javascript"></script>
+<script src="/js/index/jquery/jquery.autocomplete.js" type="text/javascript"></script>
+<script src="/js/index/search.js" type="text/javascript"></script>
+<script src="/js/index/menus/open_main_menu.js" type="text/javascript"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('#yw0').yiiListView({'ajaxUpdate':[],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'list-view-loading','sorterClass':'sorter','enableHistory':false});
+window.fbAsyncInit = function() {
+            FB.init({appId: "1375285472692233", status: true, cookie: true, xfbml: true});
+		};
+		(function() {
+			var e = document.createElement("script");
+			e.type = "text/javascript";
+			e.src = document.location.protocol + "//connect.facebook.net/en_US/all.js";
+			e.async = true;
+			document.getElementById("fb-root").appendChild(e);
+		}());
+
+        $(".search-icon").click(function() {
+            $(".search").css("width", "1100px");
+            $(".search").css("float", "none");
+            $(".search-icon").hide();
+            $(".search-hidden").animate({"opacity": "show"}, "slow");
+        });
+      
+init_autocomplete("/en/download/autocomplete");
+});
+/*]]>*/
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"db6d92fcc2","applicationID":"4018205","transactionName":"YlxSY0FWVkdQWhVRXVsWcVRHXldaHn0OT1xZVlFTcFhWQENWDVRXRxZTVkdSX1tDUARL","queueTime":0,"applicationTime":1453,"atts":"ThtRFQlMRUk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
