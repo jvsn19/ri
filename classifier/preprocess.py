@@ -10,7 +10,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 import codecs
 
-def takeHtmlContent(path):
+def removeHtmlTags(path):
     page = BeautifulSoup(open(path), "html.parser")
     [s.extract() for s in page("script")]
     [s.extract() for s in page("style")]
@@ -23,7 +23,7 @@ def takeAllFiles(file_type):
 
     return files
 
-def removePoints(html_content):
+def removeSpecialCharacters(html_content):
     html_content = re.sub("\n+|\t+", " ", html_content)
     html_content = re.sub("[!\d+,.;@#?!&$--)(:/}{|=]+|•|©|﻿|™|®|×| x "," ",  html_content)
     return html_content
@@ -32,8 +32,8 @@ def putContentInFile(in_type, out_type):
     files = takeAllFiles(in_type)
     for i in range(len(files)):
         path_output = re.sub('.' + in_type, '.' + out_type, files[i])
-        html_content = takeHtmlContent(files[i])
-        html_content = removePoints(html_content)
+        html_content = removeHtmlTags(files[i])
+        html_content = removeSpecialCharacters(html_content)
         file = open(path_output, "w")
         file.write(html_content)
         file.close()
@@ -78,6 +78,8 @@ def tokenizeFiles(useStemming, useStopWords, dataName):
         vectorizer = CountVectorizer(encoding='utf-8', stop_words=stop_words(), analyzer=stemming)
         vectorizerTfidf = TfidfVectorizer(encoding='utf-8', stop_words=stop_words(), analyzer=stemming)
 
+
+
     doctermMatrix = vectorizer.fit_transform(vec_doc)
     doctermMatrixTfidf = vectorizerTfidf.fit_transform(vec_doc)
 
@@ -89,6 +91,7 @@ def tokenizeFiles(useStemming, useStopWords, dataName):
     dataFrameTfidf["class"] = vec_class
     dataFrameTfidf.to_csv("data/" + dataName + "Tfidf.csv", index = False)
 
+    return [vectorizer, vectorizerTfidf]
 
 def main():
     #putContentInFile("html", "txt")
