@@ -5,12 +5,12 @@ class SteamSpider(Spider):
     def __init__(self, basicUrl, pageLimit, level):
         Spider.__init__(self, basicUrl, pageLimit, level)
 
-    def _Spider__downloadPage(self, soupObject):
+    def _downloadPage(self, soupObject):
         path = open('pages/steam_' + str(self._pageCount) + '.html', 'wb')
         path.write(soupObject.encode('utf-8'))
         path.close()
     
-    def _Spider__getRank(self, soupObject, url, level):
+    def _getRank(self, soupObject, url, level):
         ranking = 0
         if level == 1:
             urlRegex = re.compile('/app/')
@@ -22,7 +22,7 @@ class SteamSpider(Spider):
             ranking += (tag != None)
         return ranking
 
-    def _Spider__cleanUrl(self, url):
+    def _cleanUrl(self, url):
         noise = re.compile('\?snr.*')
         search = re.search(noise, url)
         if search:
