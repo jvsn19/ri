@@ -5,12 +5,13 @@ from queue import PriorityQueue
 from bs4 import BeautifulSoup
 
 class Spider(metaclass = ABCMeta):
-    def __init__(self, basicUrl, pageLimit):
+    def __init__(self, basicUrl, pageLimit, level):
         self._basicUrl = basicUrl
         self._urlRegex = re.compile(basicUrl)
         self._pageCount = pageLimit #A limit of pages
         self._pageHeap = PriorityQueue()
         self._visited = set()
+        self._level = level
 
     def __searchPages(self, startPage):
         page = (0, startPage)
@@ -31,9 +32,11 @@ class Spider(metaclass = ABCMeta):
             for link in soupObject.findAll('a', href = True): #Search every link on the current page
                 href = link.get('href')
                 if self.__checkRegex(href) and not href in self._visited and self._pageCount >= 0:
-                    hrefText = requests.get(href).text
-                    hrefSoup = BeautifulSoup(hrefText, 'html.parser')
-                    rank = self.__getRank(hrefSoup)
+                    hrefSoup = None
+                    if self._level > 1:
+                        hrefText = requests.get(href).text
+                        hrefSoup = BeautifulSoup(hrefText, 'html.parser')
+                    rank = self.__getRank(hrefSoup, href, level = self._level)
                     self._pageHeap.put_nowait((-rank, href))
 
     def __checkRegex(self, page):
@@ -46,7 +49,7 @@ class Spider(metaclass = ABCMeta):
         pass
     
     @abstractmethod
-    def __getRank(self, soupObject):
+    def __getRank(self, soupObject, url, level):
         #Method to priorize game pages
         pass
 
