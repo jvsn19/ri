@@ -21,3 +21,11 @@ class SteamSpider(Spider):
             tag = soupObject.find('div', {'class': gameAreaRegex})
             ranking += (tag != None)
         return ranking
+
+    def _Spider__cleanUrl(self, url):
+        noise = re.compile('\?snr.*')
+        search = re.search(noise, url)
+        if search:
+            start, _ = search.span()
+            return url[:start]
+        return url

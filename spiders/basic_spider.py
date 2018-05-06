@@ -18,7 +18,7 @@ class Spider(metaclass = ABCMeta):
         self._pageHeap.put_nowait(page) #Inserting the first page to be crawled
         while not self._pageHeap.empty() and self._pageCount >= 0:
             _, currPage = self._pageHeap.get_nowait() #Get the current page. The first element of the 2-uple is useless here
-            print(currPage)
+            currPage = self.__cleanUrl(currPage)
             self.__crawlPage(currPage)
 
     def __crawlPage(self, page):
@@ -26,6 +26,7 @@ class Spider(metaclass = ABCMeta):
         if not page in self._visited:
             self._visited.add(page) #Prevent revisiting this page
             self._pageCount -= 1
+            print(page)
             pageText = requests.get(page).text
             soupObject = BeautifulSoup(pageText, 'html.parser')
             self.__downloadPage(soupObject)
@@ -51,6 +52,11 @@ class Spider(metaclass = ABCMeta):
     @abstractmethod
     def __getRank(self, soupObject, url, level):
         #Method to priorize game pages
+        pass
+
+    @abstractmethod
+    def __cleanUrl(self, url):
+        #Method to remove noise
         pass
 
     def run(self):
