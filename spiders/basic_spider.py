@@ -35,6 +35,7 @@ class Spider(metaclass = ABCMeta):
             for link in soupObject.findAll('a', href = True): #Search every link on the current page
                 href = link.get('href')
                 if self._checkRegex(href) and not href in self._visited and self._pageCount >= 0:
+                    href = self._fixUrl(href)
                     hrefSoup = None
                     if self._level > 1:
                         hrefText = requests.get(href).text
@@ -59,6 +60,11 @@ class Spider(metaclass = ABCMeta):
     @abstractmethod
     def _cleanUrl(self, url):
         #Method to remove noise
+        pass
+
+    @abstractmethod
+    def _fixUrl(self, url):
+        #Fix some pruned url
         pass
 
     def run(self):

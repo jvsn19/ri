@@ -29,3 +29,6 @@ class SteamSpider(Spider):
             start, _ = search.span()
             return url[:start]
         return url
+
+    def _fixUrl(self, url):
+        return url
