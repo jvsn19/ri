@@ -23,12 +23,13 @@ class SteamSpider(Spider):
         return ranking
 
     def _cleanUrl(self, url):
-        noise = re.compile('\?snr.*')
+        noise = re.compile('/app/[0-9]*/')
         search = re.search(noise, url)
         if search:
-            start, _ = search.span()
-            return url[:start]
+            _, end = search.span()
+            return url[:end]
         return url
+
 
     def _fixUrl(self, url):
         return url
