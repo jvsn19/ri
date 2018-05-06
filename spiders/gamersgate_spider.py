@@ -6,8 +6,10 @@ class GamersGateSpider(Spider):
         Spider.__init__(self, basicUrl, pageLimit, level)
 
     def _checkRegex(self, page):
+        #If page matches with basic Url, is a valid url
         if re.match(self._urlRegex, page):
             return True
+        #Else, it can be an incomplete url
         return re.search('^/[^/].*/', page)
 
     def _downloadPage(self, soupObject):
