@@ -7,11 +7,19 @@ from bs4 import BeautifulSoup
 class Spider(metaclass = ABCMeta):
     def __init__(self, basicUrl, pageLimit, level):
         self._basicUrl = basicUrl
+        self._disallow = []
         self._urlRegex = re.compile(basicUrl)
         self._pageCount = pageLimit #A limit of pages
         self._pageHeap = PriorityQueue()
         self._visited = set()
         self._level = level
+
+    def __readRobots(self):
+        robotsUrl = self._basicUrl + '/robots.txt'
+        robotsTxt = requests.get(robotsUrl).text
+        disallowRegex = re.compile('Disallow: .*')
+        for disallowed in re.findall(disallowRegex, robotsTxt):
+            self._disallow.append(re.compile(disallowed))
 
     def __searchPages(self, startPage):
         page = (0, startPage)
@@ -23,7 +31,7 @@ class Spider(metaclass = ABCMeta):
 
     def __crawlPage(self, page):
         #Put pages in the heap
-        if not page in self._visited:
+        if not page in self._visited and self.__checkAllow(page):
             self._visited.add(page) #Prevent revisiting this page
             self._pageCount -= 1
             print(page)
@@ -39,6 +47,12 @@ class Spider(metaclass = ABCMeta):
                         hrefSoup = BeautifulSoup(hrefText, 'html.parser')
                     rank = self.__getRank(hrefSoup, href, level = self._level)
                     self._pageHeap.put_nowait((-rank, href))
+
+    def __checkAllow(self, url):
+        for disallowUrl in self._disallow:
+            if re.search(disallowUrl, url):
+                return False
+        return True
 
     def __checkRegex(self, page):
         #Check if this page is relevant by matching the basicRegex with the page url
@@ -60,4 +74,5 @@ class Spider(metaclass = ABCMeta):
         pass
 
     def run(self):
+        self.__readRobots()
         self.__searchPages(self._basicUrl)
