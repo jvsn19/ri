@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import glob
 import re
 import pandas as pd
@@ -99,5 +98,6 @@ def main():
     tokenizeFiles(False, True, "stopwords")
     tokenizeFiles(True, False, "stemming")
     tokenizeFiles(True, True, "stopNstem")
+
 
 main()
