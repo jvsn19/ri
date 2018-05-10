@@ -58,6 +58,11 @@ def MakeVecDoc():
 
     return vec_doc, vec_class
 
+def put_in_csv(dataName, doctermMatrix, vec_class):
+    dataFrame = pd.DataFrame(doctermMatrix)
+    dataFrame["class"] = vec_class
+    dataFrame.to_csv("data/" + dataName + ".csv", index = False)
+
 def tokenizeFiles(useStemming, useStopWords, dataName):
     vec_doc, vec_class = MakeVecDoc()
     vectorizer = None
@@ -78,26 +83,33 @@ def tokenizeFiles(useStemming, useStopWords, dataName):
         vectorizerTfidf = TfidfVectorizer(encoding='utf-8', stop_words=stop_words(), analyzer=stemming)
 
 
-
-    doctermMatrix = vectorizer.fit_transform(vec_doc)
-    doctermMatrixTfidf = vectorizerTfidf.fit_transform(vec_doc)
-
-    dataFrameCount = pd.DataFrame(doctermMatrix.todense())
-    dataFrameCount["class"] = vec_class
-    dataFrameCount.to_csv("data/" + dataName + ".csv", index = False)
+    vectorizer.fit(vec_doc)
+    vectorizerTfidf.fit(vec_doc)
     
-    dataFrameTfidf = pd.DataFrame(doctermMatrixTfidf.todense())
-    dataFrameTfidf["class"] = vec_class
-    dataFrameTfidf.to_csv("data/" + dataName + "Tfidf.csv", index = False)
+    #put_in_csv(dataName, doctermMatrix.todense(), vec_class)
+    #put_in_csv(dataName + "Tfidf", doctermMatrixTfidf.todense(), vec_class)
 
     return [vectorizer, vectorizerTfidf]
 
 def main():
-    #putContentInFile("html", "txt")
-    tokenizeFiles(False, False, "token")
-    tokenizeFiles(False, True, "stopwords")
-    tokenizeFiles(True, False, "stemming")
-    tokenizeFiles(True, True, "stopNstem")
+    vectorizer = tokenizeFiles(False, False, "token")
+    #print(vectorizer[0].vocabulary_)
+    #dataFrame = pd.DataFrame(vectorizer[0].vocabulary_)
+    #dataFrame.to_csv("data/vocabulary.csv")
+    info_gain = pd.read_csv("data/info_gain.csv")
+    info_gain.drop("class", axis = 1, inplace = True)
 
+    best_tokens = []
+    info_gain_tokens = []
+    for col in info_gain.columns:
+        for i in vectorizer[0].vocabulary_:
+            #print(int(col), i)
+            if(int(col) == vectorizer[0].vocabulary_[i]):
+                best_tokens.append(col)
+                info_gain_tokens.append(i)
+                break
+    dataFrame = pd.DataFrame(zip(best_tokens, info_gain_tokens), columns = ["Name", "information_gain"])
+    #print(dataFrame)
+    dataFrame.to_csv("data/info_gain_tokens.csv", index = False, encoding='utf-8')
 
 main()
