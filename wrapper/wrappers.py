@@ -9,10 +9,10 @@ def get_list_info_steam(name, listReq, list, price):
     info = []
     offset = 0
     if(name == []): info.append(None)
-    else: info.append(name)
+    else: info.append(name[0])
     if(price == []): info.append(None)
     else: 
-        price = re.sub("[\t\n\r]+",'', price)
+        price = re.sub("[\t\n\r]+",'', price[0])
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in list): offset = 1
@@ -20,6 +20,7 @@ def get_list_info_steam(name, listReq, list, price):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
             info.append(list[i + offset].lower())
+        else: info.append("--")
     return info
 
 data_steam = []
@@ -54,15 +55,16 @@ def get_list_info_up(name, listReq, list, price):
     info = []
     offset = 0
     if(name == None): info.append(None)
-    else: info.append(name)
+    else: info.append(name[0])
     
     if(price == None): info.append(None)
-    else: info.append(price)
+    else: info.append(price[0])
     if('Requires a 64-bit processor and operating system' in list): offset = 1
     for i in range(0,len(listReq)):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
             info.append(list[i + offset].lower())
+        else: info.append("--")
     return info
 
 data_uplay = []
@@ -114,6 +116,8 @@ def get_list_info_itch(name, listReq, price):
         if (express == 'OS:' or express == 'Processor:' or express == 'Memory:'
             or express == 'Graphics:' or express == 'DirectX:' or (express == 'Space:' or express == 'Storage:')):
             info.append(express.lower())
+        else: info.append("--")
+            
     return info
 
 data_itch = []
