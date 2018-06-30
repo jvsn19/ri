@@ -49,9 +49,7 @@ def get_list_info_up(name, listReq, l, price):
                 if(i + offset >= len(l)): info.append("--")
                 else: info.append(l[i + offset].lower())
                 printou = True
-                print(listReq[i], labels_general[j])
         if(printou == False): info.append("--")
-    print(info)
     return info
 
 
@@ -97,7 +95,6 @@ def get_atributes_steam(path):
     RAW_NAME = tree.xpath(XPATH_NAME_STEAM)
     RAW_INFO_TITLE = tree.xpath(XPATH_INFO_TITLE_STEAM)
     RAW_INFO = tree.xpath(XPATH_INFO_STEAM)
-    print(RAW_INFO)
     RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM)
     RAW_DESC = tree.xpath(XPATH_DESC_STEAM)
     if(RAW_PRICE == []): RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM2)
@@ -153,4 +150,5 @@ def get_atributes_itch(path):
     return data_itch[0]
 
 if __name__ == "__main__":
-    print(get_atributes_steam('../classifier/sites/steam/positivePages/page3.html'))
+    get_atributes_steam('../classifier/sites/steam/positivePages/page3.html')
+    get_atributes_steam('../classifier/sites/steam/positivePages/page3.html')
