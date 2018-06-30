@@ -5,7 +5,7 @@ parser = etree.HTMLParser()
 root = '../classifier/sites/steam/positivePages/page'
 labels_general = ['Game','Price','OS','Processor','RAM','Graphics','DirectX','Storage']
 
-def get_list_info_steam(name, listReq, list, price):
+def get_list_info_steam(name, listReq, l, price):
     info = []
     offset = 0
     if(name == []): info.append(None)
@@ -15,16 +15,16 @@ def get_list_info_steam(name, listReq, list, price):
         price = re.sub("[\t\n\r]+",'', price[0])
         info.append(price)
 
-    if('Requires a 64-bit processor and operating system' in list): offset = 1
+    if('Requires a 64-bit processor and operating system' in l): offset = 1
     for i in range(0,len(listReq)):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            if(i + offset >= list.size()): info.append("--")
-            else: info.append(list[i + offset].lower())
+            if(i + offset >= len(l)): info.append("--")
+            else: info.append(l[i + offset].lower())
         else: info.append("--")
     return info
 
-def get_list_info_up(name, listReq, list, price):
+def get_list_info_up(name, listReq, l, price):
     info = []
     offset = 0
     if(name == None): info.append(None)
@@ -32,12 +32,12 @@ def get_list_info_up(name, listReq, list, price):
 
     if(price == None): info.append(None)
     else: info.append(price[0])
-    if('Requires a 64-bit processor and operating system' in list): offset = 1
+    if('Requires a 64-bit processor and operating system' in l): offset = 1
     for i in range(0,len(listReq)):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            if(i + offset >= list.size()): info.append("--")
-            else: info.append(list[i + offset].lower())
+            if(i + offset >= len(l)): info.append("--")
+            else: info.append(l[i + offset].lower())
         else: info.append("--")
     return info
 
@@ -135,5 +135,5 @@ def get_atributes_itch(path):
     
     return data_itch[0]
 
-#if __name__ == "__main__":
-#    print(get_atributes_uplay('../classifier/sites/uplay/positivePages/page1.html'))
+if __name__ == "__main__":
+    print(get_atributes_uplay('../classifier/sites/uplay/positivePages/page1.html'))
