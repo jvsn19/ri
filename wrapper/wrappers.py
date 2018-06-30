@@ -19,7 +19,8 @@ def get_list_info_steam(name, listReq, list, price):
     for i in range(0,len(listReq)):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            info.append(list[i + offset].lower())
+            if(i + offset >= list.size()): info.append("--")
+            else: info.append(list[i + offset].lower())
         else: info.append("--")
     return info
 
