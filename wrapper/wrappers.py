@@ -8,9 +8,9 @@ labels_general = ['Game','Price','OS','Processor','Memory','Graphics','DirectX',
 def get_list_info_steam(name, listReq, l, price, desc):
     info = []
     offset = 0
-    if(name == []): info.append(None)
+    if(name == []): info.append("--")
     else: info.append(name[0])
-    if(price == []): info.append(None)
+    if(price == []): info.append("--")
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
         info.append(price)
@@ -150,5 +150,4 @@ def get_atributes_itch(path):
     return data_itch[0]
 
 if __name__ == "__main__":
-    get_atributes_steam('../classifier/sites/steam/positivePages/page3.html')
-    get_atributes_steam('../classifier/sites/steam/positivePages/page3.html')
+    print(get_atributes_steam('../classifier/sites/steam/positivePages/page1.html'))
