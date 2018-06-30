@@ -3,7 +3,7 @@ import re
 
 parser = etree.HTMLParser()
 root = '../classifier/sites/steam/positivePages/page'
-labels_general = ['Game','Price','OS','Processor','RAM','Graphics','DirectX','Storage']
+labels_general = ['Game','Price','OS','Processor','Memory','Graphics','DirectX','Storage']
 
 def get_list_info_steam(name, listReq, l, price):
     info = []
@@ -16,12 +16,14 @@ def get_list_info_steam(name, listReq, l, price):
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in l): offset = 1
-    for i in range(0,len(listReq)):
-        if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
-            or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            if(i + offset >= len(l)): info.append("--")
-            else: info.append(l[i + offset].lower())
-        else: info.append("--")
+    for j in range(2, len(labels_general)):
+        printou = False
+        for i in range(0,len(listReq)):
+            if (listReq[i].lower() == (labels_general[j] + ":").lower()):
+                if(i + offset >= len(l)): info.append("--")
+                else: info.append(l[i + offset].lower())
+                printou = True
+        if(printou == False): info.append("--")
     return info
 
 def get_list_info_up(name, listReq, l, price):
@@ -33,15 +35,20 @@ def get_list_info_up(name, listReq, l, price):
     if(price == None): info.append(None)
     else: info.append(price[0])
     if('Requires a 64-bit processor and operating system' in l): offset = 1
-    for i in range(0,len(listReq)):
-        if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
-            or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            if(i + offset >= len(l)): info.append("--")
-            else: info.append(l[i + offset].lower())
-        else: info.append("--")
+    for j in range(2, len(labels_general)):
+        printou = False
+        search = labels_general[j]
+        if(search == "Storage"): search = "disk space"
+        for i in range(0,len(listReq)):
+            if (listReq[i].lower() == (labels_general[j] + ":").lower()):
+                if(i + offset >= len(l)): info.append("--")
+                else: info.append(l[i + offset].lower())
+                printou = True
+                print(listReq[i], labels_general[j])
+        if(printou == False): info.append("--")
+    print(info)
     return info
 
-root = '../classifier/sites/itch/positivePages/page'
 
 def get_list_info_itch(name, listReq, price):
     info = []
@@ -50,19 +57,22 @@ def get_list_info_itch(name, listReq, price):
     else: info.append(name[0])
     if(price == []): info.append("Free")
     else: info.append(price[0])
-
-    for i in range(0,len(listReq)):
-        if(listReq == 'Recommended:' or listReq == 'Additional Notes:'): break
+    
+    for j in range(2, len(labels_general)):
+        printou = False
+        for i in range(0,len(listReq)):
+            if(listReq == 'Recommended:' or listReq == 'Additional Notes:'): break
             
-        express = re.search('(\w+\:)', listReq[i])
-        if(express != None): 
-            express = express.group(0)
+            express = re.search('(\w+\:)', listReq[i])
+            if(express != None): 
+                express = express.group(0)
 
-        if (express == 'OS:' or express == 'Processor:' or express == 'Memory:'
-            or express == 'Graphics:' or express == 'DirectX:' or (express == 'Space:' or express == 'Storage:')):
-            info.append(express.lower())
-        else: info.append("--")
+            if (express.lower() == (labels_general[j] + ":").lower()):
+                info.append(express.lower())
+                printou = True
             
+        if(printou == False): info.append("--")
+
     return info
 
 def get_atributes_steam(path):
