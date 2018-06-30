@@ -85,8 +85,8 @@ def get_atributes_steam(path):
     root = path
     labels = ['Game','Price','OS','Processor','RAM','Graphics','DirectX','Storage', 'Description']
     
-    XPATH_INFO_TITLE_STEAM = '//div[@class="sysreq_contents"]/div/div[1]/ul/ul/li/strong/text()'
-    XPATH_INFO_STEAM = '//div[@class="sysreq_contents"]/div/div[1]/ul/ul/li/text()'
+    XPATH_INFO_TITLE_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/strong/text()'
+    XPATH_INFO_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/text()'
     XPATH_PRICE_STEAM = '//div[@class="discount_final_price"]/text()'
     XPATH_PRICE_STEAM2 = '//div[@class="game_purchase_action"]/div[1]/div[1]/text()'
     XPATH_NAME_STEAM = '//div[@class="apphub_AppName"]/text()'
@@ -97,6 +97,7 @@ def get_atributes_steam(path):
     RAW_NAME = tree.xpath(XPATH_NAME_STEAM)
     RAW_INFO_TITLE = tree.xpath(XPATH_INFO_TITLE_STEAM)
     RAW_INFO = tree.xpath(XPATH_INFO_STEAM)
+    print(RAW_INFO)
     RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM)
     RAW_DESC = tree.xpath(XPATH_DESC_STEAM)
     if(RAW_PRICE == []): RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM2)
@@ -152,4 +153,4 @@ def get_atributes_itch(path):
     return data_itch[0]
 
 if __name__ == "__main__":
-    print(get_atributes_steam('../classifier/sites/steam/positivePages/page4.html'))
+    print(get_atributes_steam('../classifier/sites/steam/positivePages/page3.html'))
