@@ -5,7 +5,7 @@ import re
 
 class Generic_Spider():
     def __init__(self):
-        self.__urls = ['http://store.steampowered.com/', 'https://www.greenmangaming.com/', 'https://br.gamersgate.com/',
+        self.__urls = ['https://store.steampowered.com/', 'https://www.greenmangaming.com/', 'https://br.gamersgate.com/',
                         'http://www.oneplay.com/en/', 'https://www.gog.com/', 'https://www.humblebundle.com/store', 
                         'https://www.origin.com/bra/en-us/store', 'https://www.nuuvem.com/', 'https://itch.io/', 
                         'https://uplay.ubi.com/#!/en-US/']
