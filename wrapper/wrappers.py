@@ -28,7 +28,7 @@ def get_list_info_up(name, listReq, list, price):
     offset = 0
     if(name == None): info.append(None)
     else: info.append(name[0])
-    
+
     if(price == None): info.append(None)
     else: info.append(price[0])
     if('Requires a 64-bit processor and operating system' in list): offset = 1
@@ -54,7 +54,7 @@ def get_list_info_itch(name, listReq, price):
             
         express = re.search('(\w+\:)', listReq[i])
         if(express == None): break
-        print(express.group(1))
+
         express = express.group(0)
         if (express == 'OS:' or express == 'Processor:' or express == 'Memory:'
             or express == 'Graphics:' or express == 'DirectX:' or (express == 'Space:' or express == 'Storage:')):
@@ -89,7 +89,7 @@ def get_atributes_steam(path):
         
     return data
 
-def get_atributes_uplay(root):
+def get_atributes_uplay(path):
     parser = etree.HTMLParser()
     root = path
 
@@ -102,11 +102,12 @@ def get_atributes_uplay(root):
 
     tree = etree.parse(root, parser)
     RAW_NAME = tree.xpath(XPATH_NAME_UP)
+
     RAW_INFO_TITLE = tree.xpath(XPATH_INFO_TITLE_UP)
     RAW_INFO = tree.xpath(XPATH_INFO_UP)
     RAW_PRICE = tree.xpath(XPATH_PRICE_UP)
         
-    FILTERED_INFO = get_list_info_up(RAW_NAME[0], RAW_INFO_TITLE, RAW_INFO, RAW_PRICE[0])
+    FILTERED_INFO = get_list_info_up(RAW_NAME, RAW_INFO_TITLE, RAW_INFO, RAW_PRICE)
     data_uplay.append(dict(zip(labels_general,FILTERED_INFO)))
         
     return data_uplay
@@ -131,3 +132,6 @@ def get_atributes_itch(path):
     data_itch.append(dict(zip(labels_general,FILTERED_INFO)))
     
     return data_itch
+
+#if __name__ == "__main__":
+#    print(get_atributes_uplay('../classifier/sites/uplay/positivePages/page1.html'))
