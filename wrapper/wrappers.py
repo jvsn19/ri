@@ -36,7 +36,8 @@ def get_list_info_up(name, listReq, list, price):
     for i in range(0,len(listReq)):
         if (listReq[i] == 'OS:' or listReq[i] == 'Processor:' or listReq[i] == 'Memory:'
             or listReq[i] == 'Graphics:' or listReq[i] == 'DirectX:' or listReq[i] == 'Storage:'):
-            info.append(list[i + offset].lower())
+            if(i + offset >= list.size()): info.append("--")
+            else: info.append(list[i + offset].lower())
         else: info.append("--")
     return info
 
@@ -54,9 +55,9 @@ def get_list_info_itch(name, listReq, price):
         if(listReq == 'Recommended:' or listReq == 'Additional Notes:'): break
             
         express = re.search('(\w+\:)', listReq[i])
-        if(express == None): break
+        if(express != None): 
+            express = express.group(0)
 
-        express = express.group(0)
         if (express == 'OS:' or express == 'Processor:' or express == 'Memory:'
             or express == 'Graphics:' or express == 'DirectX:' or (express == 'Space:' or express == 'Storage:')):
             info.append(express.lower())
