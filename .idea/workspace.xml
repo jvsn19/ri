@@ -2,426 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1c7ac05-e1d4-4994-910f-f8fbc4919a31" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/classifier/classification.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/classifiers_results/Decision_tree.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/classifiers_results/Naive_bayes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/classifiers_results/logistic_reg.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/classifiers_results/mlp.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/classifiers_results/svm.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/.~lock.docterm.csv#" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/info_gain.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/info_gain_tokens.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stemming.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stemmingTfidf.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stopNstem.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stopNstemTfidf.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stopwords.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/stopwordsTfidf.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/token.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/data/tokenTfidf.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/preprocess.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gamersgate/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/gog/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/greenmangamming/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/humblebunble/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/itch/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/nuuvem/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/oneplay/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/origin/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/steam/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/negativePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page9.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/sites/uplay/positivePages/page9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/takePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -430,8 +12,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="11" />
@@ -488,6 +90,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24304539" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -510,5 +113,14 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

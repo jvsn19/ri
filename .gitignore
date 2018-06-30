@@ -1,0 +1,4 @@
+/pages
+./vscode
+/__pycache__
+/spiders/__pycache__
