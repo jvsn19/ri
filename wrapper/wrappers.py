@@ -87,7 +87,7 @@ def get_atributes_steam(path):
     
     data.append(dict(zip(labels_general,FILTERED_INFO)))
         
-    return data
+    return data[0]
 
 def get_atributes_uplay(path):
     parser = etree.HTMLParser()
@@ -110,7 +110,7 @@ def get_atributes_uplay(path):
     FILTERED_INFO = get_list_info_up(RAW_NAME, RAW_INFO_TITLE, RAW_INFO, RAW_PRICE)
     data_uplay.append(dict(zip(labels_general,FILTERED_INFO)))
         
-    return data_uplay
+    return data_uplay[0]
 
 def get_atributes_itch(path):
     parser = etree.HTMLParser()
@@ -131,7 +131,7 @@ def get_atributes_itch(path):
 
     data_itch.append(dict(zip(labels_general,FILTERED_INFO)))
     
-    return data_itch
+    return data_itch[0]
 
 #if __name__ == "__main__":
 #    print(get_atributes_uplay('../classifier/sites/uplay/positivePages/page1.html'))
