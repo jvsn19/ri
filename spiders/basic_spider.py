@@ -25,6 +25,7 @@ class Spider(metaclass = ABCMeta):
 
     def _crawlPage(self, page):
         #Put pages in the heap
+        #print(page + 'en/', self._robotParser.can_fetch('*', page+'en/'))
         if not page in self._visited and self._robotParser.can_fetch('*', page):
             self._visited.add(page) #Prevent revisiting this page
             self._pageCount -= 1
