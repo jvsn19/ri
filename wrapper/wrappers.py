@@ -26,6 +26,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
         if(printou == False): info.append("--")
     if(desc != []): 
         desc = re.sub("[\t\n\r]+", '', desc[0])
+        desc.replace('\"', '\'')
         info.append(desc)
     else: info.append("--")
 
@@ -149,5 +150,5 @@ def get_atributes_itch(path):
     
     return data_itch[0]
 
-if __name__ == "__main__":
-    print(get_atributes_steam('../classifier/sites/steam/positivePages/page1.html'))
+#if __name__ == "__main__":
+ #   print(get_atributes_steam('../classifier/sites/steam/positivePages/page1.html'))
