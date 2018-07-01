@@ -3,7 +3,7 @@ import re
 
 parser = etree.HTMLParser()
 root = '../classifier/sites/steam/positivePages/page'
-labels_general = ['Game','Price','OS','Processor','Memory','Graphics','DirectX','Storage', 'Description']
+labels_general = ['game','price','os','processor','memory','graphics','directX','storage', 'description']
 
 def get_list_info_steam(name, listReq, l, price, desc):
     info = []
@@ -15,6 +15,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
     if(name == []): info.append("--")
     else:
         name = re.sub('[\"]+', '\'', name[0])
+        name = re.sub('[,.;]', '', name)
         info.append(name)
     if(price == []): info.append("--")
     else: 
@@ -29,12 +30,16 @@ def get_list_info_steam(name, listReq, l, price, desc):
         for i in range(0,len(listReq)):
             if (listReq[i].lower() == (labels_general[j] + ":").lower()):
                 if(i + offset >= len(l)): info.append("--")
-                else: info.append(l[i + offset].lower())
+                else: 
+                    ins = l[i + offset].lower()
+                    ins = re.sub('[,.;]', '', ins)
+                    info.append(ins)
                 printou = True
         if(printou == False): info.append("--")
     if(desc != []): 
         desc = re.sub("[\t\n\r]+", '', desc[0])
         desc = re.sub('[\"]+', '\'', desc)
+        desc = re.sub('[,.;]', '', desc)
         info.append(desc)
     else: info.append("--")
     
