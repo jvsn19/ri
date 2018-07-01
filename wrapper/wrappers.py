@@ -95,7 +95,7 @@ def get_list_info_itch(name, listReq, price):
 def get_atributes_steam(path):
     parser = etree.HTMLParser()
     root = path
-    labels = ['Game','Price','OS','Processor','RAM','Graphics','DirectX','Storage', 'Description']
+    labels = ['game','price','os','processor','ram','graphics','directX','storage', 'description']
     
     XPATH_INFO_TITLE_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/strong/text()'
     XPATH_INFO_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/text()'
