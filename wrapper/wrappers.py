@@ -9,7 +9,9 @@ def get_list_info_steam(name, listReq, l, price, desc):
     info = []
     offset = 0
     if(name == []): info.append("--")
-    else: info.append(name[0])
+    else:
+        name = re.sub('[\"]+', '\'', name[0])
+        info.append(name)
     if(price == []): info.append("--")
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
@@ -26,7 +28,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
         if(printou == False): info.append("--")
     if(desc != []): 
         desc = re.sub("[\t\n\r]+", '', desc[0])
-        desc.replace('\"', '\'')
+        desc = re.sub('[\"]+', '\'', desc)
         info.append(desc)
     else: info.append("--")
 
