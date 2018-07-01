@@ -16,7 +16,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
     else:
         name = re.sub('[\"]+', '\'', name[0])
         name = re.sub('[,.;]', '', name)
-        info.append(name)
+        info.append(name.lower())
     if(price == []): info.append("--")
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
@@ -40,7 +40,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
         desc = re.sub("[\t\n\r]+", '', desc[0])
         desc = re.sub('[\"]+', '\'', desc)
         desc = re.sub('[,.;]', '', desc)
-        info.append(desc)
+        info.append(desc.lower())
     else: info.append("--")
     
     return info
