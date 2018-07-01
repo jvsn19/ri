@@ -15,6 +15,8 @@ def get_list_info_steam(name, listReq, l, price, desc):
     if(price == []): info.append("--")
     else: 
         price = re.sub("[\t\n\r]+",'', price[0])
+        price = re.sub("\w+\$", '', price)
+        price = re.sub(" ", '', price)
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in l): offset = 1
@@ -152,5 +154,5 @@ def get_atributes_itch(path):
     
     return data_itch[0]
 
-#if __name__ == "__main__":
- #   print(get_atributes_steam('../classifier/sites/steam/positivePages/page1.html'))
+if __name__ == "__main__":
+    print(get_atributes_steam('../classifier/sites/steam/positivePages/page1.html'))
