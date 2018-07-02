@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1c7ac05-e1d4-4994-910f-f8fbc4919a31" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consult_processing/query_processing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/consult_processing/query_processing.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inverted_index/index.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/inverted_index/index.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wrapper/steam_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrapper/steam_extractor.py" afterDir="false" />
-    </list>
+    <list default="true" id="a1c7ac05-e1d4-4994-910f-f8fbc4919a31" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +14,7 @@
       <file leaf-file-name="create_ii.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inverted_index/create_ii.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="353">
               <caret line="26" column="106" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="106" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -81,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="11" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -236,13 +229,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24304539" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.3290938" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
@@ -360,7 +352,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inverted_index/create_ii.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="353">
           <caret line="26" column="106" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="106" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
