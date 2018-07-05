@@ -8,9 +8,12 @@ root = Tk()
 root.geometry("500x700") #You want the size of the app to be 500x500
 root.resizable(0, 0) #Don't allow resizing in the x or y direction
 
-def getGames():
-    frame.config({'borderwidth':2})
+text = Text(root)
+#text.insert(INSERT, "Hello.....")
+#text.insert(END, "Bye Bye.....")
+#text.pack()
 
+def getGames():
     query = GeneralQuery(eGame.get().lower(), eDesc.get().lower(), eOS.get().lower(), eRam.get().lower(), eStorage.get().lower(), ePrice.get().lower())
     result = query.processQuery()
 
@@ -23,9 +26,9 @@ def getGames():
             jsonGame = json.loads(fp.read()[0:-1])
         
         r = StringVar()
-        r.set(str("\nName: " + jsonGame["game"] + "\nPrice: " + jsonGame["price"] + "\nos: " + jsonGame["os"] + "\nram: " + jsonGame["ram"] + "\nstorage: " + jsonGame["storage"]))
-        lResult = Label(frame, font=("Helvetica", 9),textvariable=r)
-        lResult.pack()
+        text.insert(INSERT, (str("\nName: " + jsonGame["game"] + "\nPrice: " + jsonGame["price"] + "\nos: " + jsonGame["os"] + "\nram: " + jsonGame["ram"] + "\nstorage: " + jsonGame["storage"] + "\n")))
+        #lResult = Label(frame, font=("Helvetica", 9),textvariable=r)
+        text.pack()
 
 lHead = Label(root, font=("Helvetica", 24), text="Engenho de Busca - Jogos\n")
 lHead.pack()
@@ -71,8 +74,5 @@ bGeral.pack()
 
 lspace = Label(root, text="\nResultados:")
 lspace.pack()
-
-frame = Frame(width=300, height=100, borderwidth=0, relief=GROOVE)
-frame.pack()
 
 mainloop()

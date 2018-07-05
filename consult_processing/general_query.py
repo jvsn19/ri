@@ -4,7 +4,7 @@ import operator
 import pprint
 
 class GeneralQuery:
-    def __init__(self, queryString, description, OS, ram, storage, price):
+    def __init__(self, queryString, description, OS, ram, storage, price, useTfIdf = True):
         self.queryString = queryString
         self.description = description
         self.OS = OS
@@ -16,26 +16,27 @@ class GeneralQuery:
         self.invIndexPath = os.path.abspath('../inverted_index/frequency.json')
         self.fieldQuery = QueryProcessor(invIndexPath=self.twoTermsPath, documentsPath=self.documents)
         self.wordQuery = QueryProcessor(invIndexPath=self.invIndexPath, documentsPath=self.documents)
+        self.useTfIdf = useTfIdf
 
     def processQuery(self):
         gameList = []
         if(self.queryString != ''):
-            games = self.wordQuery.query(self.queryString, useTfIdf = True)
+            games = self.wordQuery.query(self.queryString, useTfIdf = self.useTfIdf)
             gameList.append(games)
         if(self.description != ''):
-            games = self.fieldQuery.query(self.description, useTfIdf=True, field="description")
+            games = self.fieldQuery.query(self.description, useTfIdf=self.useTfIdf, field="description")
             gameList.append(games)
         if(self.storage != ''):
-            games = self.fieldQuery.query(self.storage, useTfIdf=True, field="storage")
+            games = self.fieldQuery.query(self.storage, useTfIdf=self.useTfIdf, field="storage")
             gameList.append(games)
         if(self.OS != ''):
-            games = self.fieldQuery.query(self.OS, useTfIdf=True, field="os")
+            games = self.fieldQuery.query(self.OS, useTfIdf=self.useTfIdf, field="os")
             gameList.append(games)
         if(self.price != ''):
-            games = self.fieldQuery.query(self.price, useTfIdf=True, field="price")
+            games = self.fieldQuery.query(self.price, useTfIdf=self.useTfIdf, field="price")
             gameList.append(games)
         if(self.ram != ''):
-            games = self.fieldQuery.query(self.ram, useTfIdf=True, field="ram")
+            games = self.fieldQuery.query(self.ram, useTfIdf=self.useTfIdf, field="ram")
             gameList.append(games)
         
         gamesHash = {}
@@ -54,8 +55,3 @@ class GeneralQuery:
         sorted_games = sorted(gamesHash.items(), key=operator.itemgetter(1), reverse=True)
 
         return sorted_games
-
-
-query = GeneralQuery("Creed", '', 'windows', '', '', '')
-pp = pprint.PrettyPrinter(indent = 4)
-pp.pprint(query.processQuery())

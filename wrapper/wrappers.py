@@ -3,9 +3,9 @@ import re
 
 parser = etree.HTMLParser()
 root = '../classifier/sites/steam/positivePages/page'
-labels_general = ['game','price','os','processor','memory','graphics','directX','storage', 'description']
+labels_general = ['game','price','os','processor','memory','graphics','directX','storage', 'description', 'url']
 
-def get_list_info_steam(name, listReq, l, price, desc):
+def get_list_info_steam(name, listReq, l, price, desc, url):
     info = []
     offset = 0
     for i in range(0, len(l)):
@@ -25,7 +25,7 @@ def get_list_info_steam(name, listReq, l, price, desc):
         info.append(price)
 
     if('Requires a 64-bit processor and operating system' in l): offset = 1
-    for j in range(2, len(labels_general)-1):
+    for j in range(2, len(labels_general)-2):
         printou = False
         for i in range(0,len(listReq)):
             if (listReq[i].lower() == (labels_general[j] + ":").lower()):
@@ -42,7 +42,11 @@ def get_list_info_steam(name, listReq, l, price, desc):
         desc = re.sub('[,.;]', '', desc)
         info.append(desc.lower())
     else: info.append("--")
-    
+    #print(info)
+    if(url != []):
+        info.append(url[0])
+    else: info.append("--")
+    #print(url)
     return info
 
 def get_list_info_up(name, listReq, l, price):
@@ -64,6 +68,7 @@ def get_list_info_up(name, listReq, l, price):
                 else: info.append(l[i + offset].lower())
                 printou = True
         if(printou == False): info.append("--")
+        
     return info
 
 
@@ -89,13 +94,13 @@ def get_list_info_itch(name, listReq, price):
                 printou = True
             
         if(printou == False): info.append("--")
-
+        
     return info
 
 def get_atributes_steam(path):
     parser = etree.HTMLParser()
     root = path
-    labels = ['game','price','os','processor','ram','graphics','directX','storage', 'description']
+    labels = ['game','price','os','processor','ram','graphics','directX','storage', 'description', 'url']
     
     XPATH_INFO_TITLE_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/strong/text()'
     XPATH_INFO_STEAM = '//div[@class="sysreq_contents"]/div[1]/div[1]/ul/ul/li/text()'
@@ -103,6 +108,7 @@ def get_atributes_steam(path):
     XPATH_PRICE_STEAM2 = '//div[@class="game_purchase_action"]/div[1]/div[1]/text()'
     XPATH_NAME_STEAM = '//div[@class="apphub_AppName"]/text()'
     XPATH_DESC_STEAM = '//div[@class="game_description_snippet"]/text()'
+    XPATH_LINK_STEAM = '//div[@class="blockbg"]/a[3]/@href'
     data = []
 
     tree = etree.parse(root, parser)
@@ -111,9 +117,11 @@ def get_atributes_steam(path):
     RAW_INFO = tree.xpath(XPATH_INFO_STEAM)
     RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM)
     RAW_DESC = tree.xpath(XPATH_DESC_STEAM)
+    RAW_LINK = tree.xpath(XPATH_LINK_STEAM)
+    #print(RAW_LINK)
     if(RAW_PRICE == []): RAW_PRICE = tree.xpath(XPATH_PRICE_STEAM2)
 
-    FILTERED_INFO = get_list_info_steam(RAW_NAME, RAW_INFO_TITLE, RAW_INFO, RAW_PRICE, RAW_DESC)
+    FILTERED_INFO = get_list_info_steam(RAW_NAME, RAW_INFO_TITLE, RAW_INFO, RAW_PRICE, RAW_DESC, RAW_LINK)
     
     data.append(dict(zip(labels,FILTERED_INFO)))
         
@@ -164,4 +172,4 @@ def get_atributes_itch(path):
     return data_itch[0]
 
 if __name__ == "__main__":
-    print(get_atributes_steam('../classifier/sites/steam/positivePages/page12.html'))
+    print(get_atributes_steam('../classifier/sites/steam/positivePages/page10.html'))
