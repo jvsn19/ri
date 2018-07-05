@@ -34,7 +34,7 @@ class QueryProcessor():
         for i in range(len(words)):
             if(field != 'price'):
                 words[i] = re.sub(toRemove, '', words[i])
-            words[i] = unidecode.unidecode(words[i])
+            words[i] = unidecode.unidecode(words[i]).lower()
         if useStopwords:
             set_sw = set(stopwords.words('english'))
             newWords = []

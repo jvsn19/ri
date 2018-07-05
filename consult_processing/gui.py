@@ -5,7 +5,7 @@ import os
 import json
 
 root = Tk()
-root.geometry("500x800") #You want the size of the app to be 500x500
+root.geometry("500x700") #You want the size of the app to be 500x500
 root.resizable(0, 0) #Don't allow resizing in the x or y direction
 
 def getGames():

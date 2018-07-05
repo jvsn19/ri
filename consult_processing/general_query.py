@@ -1,6 +1,7 @@
 from query_processing import QueryProcessor
 import os
 import operator
+import pprint
 
 class GeneralQuery:
     def __init__(self, queryString, description, OS, ram, storage, price):
@@ -53,3 +54,8 @@ class GeneralQuery:
         sorted_games = sorted(gamesHash.items(), key=operator.itemgetter(1), reverse=True)
 
         return sorted_games
+
+
+query = GeneralQuery("Creed", '', 'windows', '', '', '')
+pp = pprint.PrettyPrinter(indent = 4)
+pp.pprint(query.processQuery())
