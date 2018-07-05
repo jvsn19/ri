@@ -16,7 +16,7 @@ text = Text(root)
 def getGames():
     query = GeneralQuery(eGame.get().lower(), eDesc.get().lower(), eOS.get().lower(), eRam.get().lower(), eStorage.get().lower(), ePrice.get().lower())
     result = query.processQuery()
-
+    text.delete('1.0', END)
     #Display games informations
     for game in result:
         gamePath = os.path.abspath('../inverted_index/db/' + str(game[0]))
@@ -26,7 +26,7 @@ def getGames():
             jsonGame = json.loads(fp.read()[0:-1])
         
         r = StringVar()
-        text.insert(INSERT, (str("\nName: " + jsonGame["game"] + "\nPrice: " + jsonGame["price"] + "\nos: " + jsonGame["os"] + "\nram: " + jsonGame["ram"] + "\nstorage: " + jsonGame["storage"] + "\n")))
+        text.insert(INSERT, (str("\nName: " + jsonGame["game"] + "\nPrice: " + jsonGame["price"] + "\nos: " + jsonGame["os"] + "\nram: " + jsonGame["ram"] + "\nstorage: " + jsonGame["storage"] + "\nURL: " + jsonGame["url"] + "\n")))
         #lResult = Label(frame, font=("Helvetica", 9),textvariable=r)
         text.pack()
 

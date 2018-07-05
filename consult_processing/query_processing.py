@@ -27,14 +27,14 @@ class QueryProcessor():
     '''
     def cleaning(self, words, field, useStopwords = False):
         if type(words) == str:
+            substr = re.findall(r'"(.*?)"', words)
+            words = re.sub(r'"(.*?)"', '', words)
             words = words.strip().split(' ')
-        if(field != 'price'):
-            toRemove = r'[.*,;\(\)\'\"\?\!%\$]'
-        
+            words = words + substr
+        toRemove = r'[.*,;\(\)\'\"\?\!%\$]'
         for i in range(len(words)):
-            if(field != 'price'):
-                words[i] = re.sub(toRemove, '', words[i])
-            words[i] = unidecode.unidecode(words[i]).lower()
+            words[i] = re.sub(toRemove, '', words[i])
+            words[i] = unidecode.unidecode(words[i])
         if useStopwords:
             set_sw = set(stopwords.words('english'))
             newWords = []
@@ -109,6 +109,9 @@ class QueryProcessor():
     def performQuery(self, useTfIdf):
         score = {i: 0 for i in range(1,self.numDocs+1)}
         for term in self.queryTerms:
+            invIndexValues = self.invIndex.get(term, False)
+            if not invIndexValues:
+                continue
             for freq, doc in self.invIndex[term]:
                 auxScore = freq
                 if useTfIdf:
@@ -119,16 +122,17 @@ class QueryProcessor():
         score = sorted(score.items(), key = lambda x : x[1], reverse=True)
         return score[:11]
     
-    #field = ['description', 'price', 'os', 'storage', 'ram']
+    
     def query(self, queryString, useTfIdf = False, field = None):
         self.setQuery(queryString, field)
         return self.performQuery(useTfIdf)
-
+    
+            
     def setLengthDocs(self):
         lengthDoc = {}
         for fileName in os.listdir(self.documentsPath):
             filePath = self.documentsPath + '/' + fileName
-            #print(filePath)
+            print(filePath)
             with open(filePath, 'r') as fp:
                 lengthDoc[int(fileName)] = len(fp.read().split(' '))
         self.lengthDoc = lengthDoc
