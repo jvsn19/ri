@@ -31,6 +31,7 @@ class Spider(metaclass = ABCMeta):
             self._pageCount -= 1
             print(page)
             pageText = requests.get(page).text
+            pageText = pageText + '\n'+ page +'\n'
             soupObject = BeautifulSoup(pageText, 'html.parser')
             self._downloadPage(soupObject)
             for link in soupObject.findAll('a', href = True): #Search every link on the current page
